@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const basePath = "/tempoo";
+const basePath = "/symposium-nextjs";
 const nextConfig = {
 	// build static export output
 	output: "export",
