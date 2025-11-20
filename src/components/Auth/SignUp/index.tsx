@@ -98,11 +98,11 @@ const SignUp = ({ signUpOpen }: { signUpOpen?: any }) => {
 
             <p className="text-body-secondary mb-4 text-base">
                 By creating an account you are agree with our{" "}
-                <a href="/#" className="text-primary hover:underline">
+                <a href="#!" className="text-primary hover:underline">
                     Privacy
                 </a>{" "}
                 and{" "}
-                <a href="/#" className="text-primary hover:underline">
+                <a href="#!" className="text-primary hover:underline">
                     Policy
                 </a>
             </p>

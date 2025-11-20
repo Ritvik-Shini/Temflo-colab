@@ -129,6 +129,15 @@ const Footer: FC = () => {
                                 NextJs Templates
                             </Link>
                         </p>
+                        <p className="text-base font-normal text-PaleCerulean">
+                            Distributed by {" "}
+                            <Link
+                                href="https://themewagon.com/"
+                                className="hover:text-white"
+                            >
+                                ThemeWagon
+                            </Link>
+                        </p>
                     </div>
                     <div className="col-span-7 grid md:grid-cols-12 grid-cols-1 items-center gap-6">
                         <p className="text-xl text-PaleCerulean font-normal col-span-4">
