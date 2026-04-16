@@ -21,7 +21,10 @@ export default function Home() {
       <EventTicket/>
       <Highlight/>
       <Upcoming/>
+<<<<<<< HEAD
+=======
       <Testimonials/>
+>>>>>>> upstream/main
       <TicketSection/>
     </main>
   )

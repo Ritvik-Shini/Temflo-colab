@@ -10,6 +10,26 @@ const Upcoming = () => {
       <section className="upcoming dark:bg-darkmode">
         <div className="max-w-1068 m-auto">
           <div className="container">
+<<<<<<< HEAD
+            <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" className="text-center pb-10">Our Major Clients</h2>
+            <div>
+              
+             
+              <div>
+                <div>
+                  <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <BoxSlider />
+             
+                    
+                  
+                 </div>
+                
+                  </div>
+                
+
+               
+                
+=======
             <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" className="text-center pb-10">Upcoming Conference</h2>
             <div>
               <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
@@ -67,11 +87,16 @@ const Upcoming = () => {
                       </div>
                     </div>
                   ))}
+>>>>>>> upstream/main
                 </div>
               </div>
             </div>
           </div>
+<<<<<<< HEAD
+      
+=======
         </div>
+>>>>>>> upstream/main
       </section>
     </>
   );

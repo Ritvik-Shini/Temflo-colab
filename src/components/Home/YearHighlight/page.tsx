@@ -55,6 +55,31 @@ const Highlight = () => {
                             data-aos-delay="200"
                             data-aos-duration="1000"
                         >
+<<<<<<< HEAD
+                            <h2 className="font-bold text-4xl">
+                                Credentials
+                            </h2>
+                            <p className="text-lg font-normal text-SlateBlueText dark:text-opacity-80 max-w-404 pt-7 pb-11">
+                               We specialise in providing state of the art design and solutions with innovative technology and experienced team 
+                            </p>
+                            <div className="flex items-center flex-wrap gap-30">
+                                <div className="text-start sm:pb-0 pb-5">
+                                    <h2 className="text-primary">23+</h2>
+                                    <p className="text-lg font-medium text-secondary dark:text-darktext">
+                                        Years Of Experience
+                                    </p>
+                                </div>
+                                <div className="text-start sm:pb-0 pb-5">
+                                    <h2 className="text-primary">1,000+</h2>
+                                    <p className="text-lg font-medium text-secondary dark:text-darktext">
+                                        Projects
+                                    </p>
+                                </div>
+                                <div className="text-start sm:pb-0 pb-5">
+                                    <h2 className="text-primary">200+</h2>
+                                    <p className="text-lg font-medium text-secondary dark:text-darktext">
+                                       Customers Served 
+=======
                             <h2>Previous Year Highlights</h2>
                             <p className="text-lg font-normal text-SlateBlueText dark:text-opacity-80 max-w-404 pt-7 pb-11">
                                 Many variations of passages of Lorem Ipsum available but the
@@ -78,6 +103,7 @@ const Highlight = () => {
                                     <h2 className="text-primary">150k+</h2>
                                     <p className="text-lg font-medium text-secondary dark:text-darktext">
                                         Participants
+>>>>>>> upstream/main
                                     </p>
                                 </div>
                             </div>
@@ -91,7 +117,11 @@ const Highlight = () => {
                             <Slider {...settings}>
                                 <div className="mt-14 relative">
                                     <Image
+<<<<<<< HEAD
+                                        src="/images/highlight/Slider_1.png"
+=======
                                         src="/images/highlight/slide-1.png"
+>>>>>>> upstream/main
                                         alt="Product"
                                         width={0}
                                         height={0}
@@ -125,7 +155,11 @@ const Highlight = () => {
                                 </div>
                                 <div className="mt-14 relative">
                                     <Image
+<<<<<<< HEAD
+                                        src="/images/highlight/Slider_1.png"
+=======
                                         src="/images/highlight/slide-1.png"
+>>>>>>> upstream/main
                                         alt="Product"
                                         width={0}
                                         height={0}
@@ -159,7 +193,11 @@ const Highlight = () => {
                                 </div>
                                 <div className="mt-14 relative">
                                     <Image
+<<<<<<< HEAD
+                                        src="images\blog\slide-1.png"
+=======
                                         src="/images/highlight/slide-1.png"
+>>>>>>> upstream/main
                                         alt="Product"
                                         width={0}
                                         height={0}
@@ -209,7 +247,11 @@ const Highlight = () => {
                             <iframe
                                 height="400"
                                 className="p-4 md:w-[50rem] w-full"
+<<<<<<< HEAD
+                                src="https://www.youtube.com/embed/yaWpcSG4kYg?si=qx2F2fRr2PlcOm3d" 
+=======
                                 src="https://www.youtube.com/embed/zzBxZeOTuDw?si=y_4N9SeeNXiSofCG"
+>>>>>>> upstream/main
                                 title="YouTube video player"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
