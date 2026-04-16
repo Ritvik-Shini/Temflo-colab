@@ -21,7 +21,6 @@ export default function Home() {
       <EventTicket/>
       <Highlight/>
       <Upcoming/>
-      <Testimonials/>
       <TicketSection/>
     </main>
   )

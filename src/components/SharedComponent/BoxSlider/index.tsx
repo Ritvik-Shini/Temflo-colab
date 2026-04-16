@@ -1,5 +1,6 @@
 "use client"
 import React from "react";
+import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -39,41 +40,133 @@ const BoxSlider = () => {
   return (
     <>
       <Slider {...settings} className="text-center">
-        <div className="bg-IcyBreeze dark:bg-darklight pt-5 pb-7 rounded-lg text-center group hover:bg-primary">
-          <h5 className="text-gray-400 text-[34px] leading-[2.76rem] font-normal group-hover:text-white">16</h5>
-          <p className="text-xs font-medium text-gray-400 group-hover:text-white">JUN 2024</p>
+        <div className="bg-IcyBreeze dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-primary">
+           <div className="mt-14 relative">
+                                                                <Image
+                                                                    src="/images/hero/Delhi Metro.png"
+                                                                    alt="Product"
+                                                                    width={85}
+                                                                    height={65}
+                                                                    style={{width:'85', height:'65'}}
+                                                                    quality={100}
+                                                                    sizes="100vh"
+                                                                    className="dark"
+                                                                ></Image>
+            </div>
+        
         </div>
-        <div className="bg-IcyBreeze dark:bg-darklight pt-5 pb-7 rounded-lg text-center group hover:bg-primary">
-          <h5 className="text-gray-400 text-[34px] leading-[2.76rem] font-normal group-hover:text-white">17</h5>
-          <p className="text-xs font-medium text-gray-400 group-hover:text-white">JAN 2024</p>
+        <div className="bg-IcyBreeze dark:bg-darklight pt-0 pb-2 rounded-lg text-center group hover:bg-primary">
+         <div className="mt-14 relative">
+                                                               <Image
+                                                                    src="/images/hero/Bharat_Electronics.png"
+                                                                    alt="Product"
+                                                                    width={85}
+                                                                    height={75}
+                                                                    style={{width:'85', height:'75'}}
+                                                                    quality={100}
+                                                                    sizes="100vh"
+                                                                    className="dark"
+                                                                ></Image>
+          </div>
+          
         </div>
-        <div className="bg-IcyBreeze dark:bg-darklight pt-5 pb-7 rounded-lg text-center group hover:bg-primary">
-          <h5 className="text-gray-400 text-[34px] leading-[2.76rem] font-normal group-hover:text-white">18</h5>
-          <p className="text-xs font-medium text-gray-400 group-hover:text-white">FEB 2024</p>
+        <div className="bg-IcyBreeze dark:bg-darklight pt-4 pb-6 rounded-lg text-center group hover:bg-primary">
+         <div className="mt-14 relative">
+                                                               <Image
+                                                                    src="/images/hero/Honeywell.png"
+                                                                    alt="Product"
+                                                                    width={95}
+                                                                    height={75}
+                                                                    style={{width:'95', height:'75'}}
+                                                                    quality={100}
+                                                                    sizes="100vh"
+                                                                    className="dark"
+                                                                ></Image>
         </div>
-        <div className="bg-IcyBreeze dark:bg-darklight pt-5 pb-7 rounded-lg text-center group hover:bg-primary">
-          <h5 className="text-gray-400 text-[34px] leading-[2.76rem] font-normal group-hover:text-white">19</h5>
-          <p className="text-xs font-medium text-gray-400 group-hover:text-white">APR 2024</p>
+       </div>
+        <div className="bg-IcyBreeze dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-primary">
+          <div className="mt-14 relative">
+                                                               <Image
+                                                                    src="/images/hero/hfcl.png"
+                                                                    alt="Product"
+                                                                    width={35}
+                                                                    height={25}
+                                                                    style={{width:'35', height:'25'}}
+                                                                    quality={100}
+                                                                    sizes="100vh"
+                                                                    className="dark"
+                                                                ></Image>
+         </div>
+       </div>
+        <div className="bg-IcyBreeze dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-primary">
+          <div className="mt-14 relative">
+                                                               <Image
+                                                                    src="/images/hero/NTPC.png"
+                                                                    alt="Product"
+                                                                    width={45}
+                                                                    height={25}
+                                                                    style={{width:'45', height:'25'}}
+                                                                    quality={100}
+                                                                    sizes="100vh"
+                                                                    className="dark"
+                                                                ></Image>
+         </div>
         </div>
-        <div className="bg-IcyBreeze dark:bg-darklight pt-5 pb-7 rounded-lg text-center group hover:bg-primary">
-          <h5 className="text-gray-400 text-[34px] leading-[2.76rem] font-normal group-hover:text-white">20</h5>
-          <p className="text-xs font-medium text-gray-400 group-hover:text-white">MAY 2024</p>
+        <div className="bg-IcyBreeze dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-primary">
+          <div className="mt-14 relative">
+                                                               <Image
+                                                                    src="/images/hero/Tech mahindra.png"
+                                                                    alt="Product"
+                                                                    width={165}
+                                                                    height={145}
+                                                                    style={{width:'165', height:'145'}}
+                                                                    quality={100}
+                                                                    sizes="100vh"
+                                                                    className="dark"
+                                                                ></Image>
+         </div>
         </div>
-        <div className="bg-IcyBreeze dark:bg-darklight pt-5 pb-7 rounded-lg text-center group hover:bg-primary">
-          <h5 className="text-gray-400 text-[34px] leading-[2.76rem] font-normal group-hover:text-white">21</h5>
-          <p className="text-xs font-medium text-gray-400 group-hover:text-white">AUG 2024</p>
+        <div className="bg-IcyBreeze dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-primary">
+           <div className="mt-14 relative">
+                                                               <Image
+                                                                    src="/images/hero/LT.png"
+                                                                    alt="Product"
+                                                                    width={75}
+                                                                    height={55}
+                                                                    style={{width:'75', height:'55'}}
+                                                                    quality={100}
+                                                                    sizes="100vh"
+                                                                    className="dark"
+                                                                ></Image>
+         </div>
         </div>
-        <div className="bg-IcyBreeze dark:bg-darklight pt-5 pb-7 rounded-lg text-center group hover:bg-primary">
-          <h5 className="text-gray-400 text-[34px] leading-[2.76rem] font-normal group-hover:text-white">22</h5>
-          <p className="text-xs font-medium text-gray-400 group-hover:text-white">SEP 2024</p>
+        <div className="bg-IcyBreeze dark:bg-darklight pt-1 pb-3 rounded-lg text-center group hover:bg-primary">
+          <div className="mt-14 relative">
+                                                               <Image
+                                                                    src="/images/hero/WELSPUN.png"
+                                                                    alt="Product"
+                                                                    width={45}
+                                                                    height={25}
+                                                                    style={{width:'45', height:'25'}}
+                                                                    quality={100}
+                                                                    sizes="100vh"
+                                                                    className="dark"
+                                                                ></Image>
+         </div>
         </div>
-        <div className="bg-IcyBreeze dark:bg-darklight pt-5 pb-7 rounded-lg text-center group hover:bg-primary">
-          <h5 className="text-gray-400 text-[34px] leading-[2.76rem] font-normal group-hover:text-white">23</h5>
-          <p className="text-xs font-medium text-gray-400 group-hover:text-white">NOV 2024</p>
-        </div>
-        <div className="bg-IcyBreeze dark:bg-darklight pt-5 pb-7 rounded-lg text-center group hover:bg-primary">
-          <h5 className="text-gray-400 text-[34px] leading-[2.76rem] font-normal group-hover:text-white">24</h5>
-          <p className="text-xs font-medium text-gray-400 group-hover:text-white">DEC 2024</p>
+        <div className="bg-IcyBreeze dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-primary">
+           <div className="mt-14 relative">
+                                                               <Image
+                                                                    src="/images/hero/Ujvn Limited.png"
+                                                                    alt="Product"
+                                                                    width={85}
+                                                                    height={65}
+                                                                    style={{width:'85', height:'65'}}
+                                                                    quality={100}
+                                                                    sizes="100vh"
+                                                                    className="dark"
+                                                                ></Image>
+         </div>
         </div>
       </Slider>
     </>
