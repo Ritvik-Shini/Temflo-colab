@@ -10,38 +10,57 @@ const Footer: FC = () => {
                     <div>
                         <Link href="/">
                             <Image
-                                src="/images/footer/footer-logo-white.svg"
-                                alt="logo"
-                                width={0}
-                                height={0}
-                                quality={100}
-                                layout="responsive"
-                                sizes="100vh"
-                                className="w-full h-full"
-                            />
+                                           src="/images/logo/TSPL-Logo.png"
+                                           alt="logo"
+                                           width={68}
+                                           height={22}
+                                           style={{ width: '68', height: '22' }}
+                                           quality={100}
+                                           className='dark'
+                                       />
                         </Link>
                     </div>
                     <div>
                         <ul className="flex items-center flex-wrap md:gap-30 gap-3 md:py-0 py-5">
+                             <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
+                                <Link href="/"></Link>
+                            </li>
                             <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
                                 <Link href="/">Home</Link>
                             </li>
                             <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
-                                <Link href="/">Speakers</Link>
+                                <Link href="/">Projects</Link>
+                            </li>
+                             <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
+                                <Link href="/"></Link>
                             </li>
                             <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
-                                <Link href="/">Schedule</Link>
+                                <Link href="/"><br></br><br></br><br></br>Get In Touch<br></br>
+                             -Phone: +91-120-4217441<br></br>
+                             -Email: info@temflo.co.in<br></br>
+                             -Website: www.temflo.co.in</Link>
                             </li>
                             <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
                                 <Link href="/">About</Link>
                             </li>
-                            <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
-                                <Link href="/">Sponsors</Link>
+                             <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
+                                <Link href="/"></Link>
                             </li>
+                            <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
+                                <Link href="/"><br></br><br></br>Support<br></br>
+                                - Terms of use<br></br>
+                                - Privacy Statement<br></br>
+                                </Link>
+                            </li>
+                            <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
+                                <Link href="/"></Link>
+                            </li>
+
                         </ul>
                     </div>
                     <div>
                         <ul className="flex items-center gap-5">
+                            <br></br><br></br>
                             <li>
                                 <Link href="/" className="group">
                                     <svg
@@ -127,7 +146,7 @@ const Footer: FC = () => {
                                 className="hover:text-white"
                                 target="_blank"
                             >
-                                NextJs Templates
+                                info@TSLP
                             </Link>
                         </p>
                         <p className="text-base font-normal text-PaleCerulean">
@@ -137,7 +156,7 @@ const Footer: FC = () => {
                                 className="hover:text-white"
                                 target="_blank"
                             >
-                                ThemeWagon
+                                Temflo System Pvt. Ltd.
                             </Link>
                         </p>
                     </div>
