@@ -8,13 +8,13 @@ const EventTicket = () => {
             <section className="dark:bg-darkmode pt-0">
                 <div className="container">
                     <div className="text-center md:pb-20 pb-8">
-                        <h2 className="pb-8" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">The Biggest Digital Project</h2>
+                        <h2 className="pb-8" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">The Biggest Digital Event in 2024</h2>
                         <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" className="text-SlateBlueText dark:text-opacity-80 text-lg font-normal max-w-920 m-auto">
-                           A digital project can bring innovation and engagement through solutions like digital museums, advanced display and monitoring systems, and immersive light and sound shows.<br></br>
-                            A digital museum uses interactive screens, virtual reality, and multimedia content to present history, art, or information in a modern and engaging way, allowing visitors to explore content more deeply.<br></br>
-                             Display and monitoring solutions play a crucial role in managing and showcasing information through LED walls, video displays, and centralized control systems, ensuring real-time updates and seamless communication.<br></br>
-                              Additionally, light and sound shows create captivating experiences by combining visuals, music, and storytelling, often used in events, monuments, and public spaces to attract and entertain audiences.<br></br> 
-                              Together, these elements make digital projects more interactive, visually appealing, and impactful.
+                            Sometimes by accident, sometimes chunks as necessary making this
+                            the first true generator on the Internet. recently with desktop
+                            publishing software like Aldus PageMaker including versions of
+                            Lorem Ipsum was popularised in the 1960s with the release of
+                            Letraset sheets containing Lorem Ipsum passages.
                         </p>
                     </div>
                     <div className="flex flex-wrap items-stretch" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
