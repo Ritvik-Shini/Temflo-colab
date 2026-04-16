@@ -13,7 +13,8 @@ const Hero = () => {
                             data-aos-duration="1000"
                             className="relative z-0  inline-block text-primary text-lg font-bold before:absolute before:content-[''] before:bg-primary/20  before:w-full before:h-2 before:-z-1 dark:before:-z-1 before:bottom-0"
                         >
-                            Starts on 16 June 2024
+            
+                            
                         </p>
                         <h1
                             className="py-4"
@@ -21,7 +22,7 @@ const Hero = () => {
                             data-aos-delay="300"
                             data-aos-duration="1000"
                         >
-                            User Experience Conference
+                           " Empowering Industries With Innovative Solutions "
                         </h1>
                         <p
                             data-aos="fade-up"
@@ -29,8 +30,8 @@ const Hero = () => {
                             data-aos-duration="1000"
                             className="text-xl text-SlateBlueText dark:text-opacity-80 font-normal md:pb-14 pb-6"
                         >
-                            We offer you a new generation of task and project management
-                            system. Plan, manage and track.
+                            Choosing us means partnering with a company that combines extensive experience with a commitment to pushing the boundaries of what is possible,
+                            delivering exceptional value, and creating impactful experiences.
                         </p>
                         <div className="flex items-center md:justify-normal lg:justify-center justify-start flex-wrap gap-4">
                             <Link
@@ -42,7 +43,7 @@ const Hero = () => {
                             >
                                 <span className="!flex !items-center gap-14">
                                     <i className="bg-[url('/images/hero/tickets.svg')] bg-no-repeat bg-contain w-6 h-6 inline-block"></i>
-                                    Buy access pass
+                                    Services
                                 </span>
                             </Link>
                             <Link
@@ -54,7 +55,7 @@ const Hero = () => {
                             >
                                 <span className="!flex !items-center gap-14">
                                     <i className="bg-[url('/images/hero/calander.svg')] bg-no-repeat bg-contain w-6 h-6 inline-block group-hover:bg-[url('/images/hero/calander-hover-white.svg')]"></i>
-                                    Add to calendar
+                                    Projects
                                 </span>
                             </Link>
                         </div>
@@ -65,9 +66,10 @@ const Hero = () => {
                         data-aos-duration="1000"
                         className="col-span-6  lg:flex hidden items-center gap-3"
                     >
-                        <div className="bg-ElectricAqua relative rounded-tl-166 rounded-br-166 w-full">
+            
+                        <div className="bg-PaleCerulean relative rounded-tl-166 rounded-br-166 w-full">
                             <Image
-                                src="/images/hero/john.png"
+                                src="/images/hero/temflo1.png"
                                 alt="hero"
                                 width={0}
                                 height={0}
@@ -76,31 +78,10 @@ const Hero = () => {
                                 sizes="100vh"
                                 className="w-full h-full"
                             />
-                            <div className="bg-yellow-300 rounded-22 shadow-hero-box py-4 px-5 absolute top-16 -left-20">
-                                <p className="text-lg font-bold text-yellow-900">John Karter</p>
-                                <p className="text-base font-medium text-yellow-900 text-center">
-                                    4.8 rating
-                                </p>
-                            </div>
+                          
                         </div>
-                        <div className="bg-primary relative rounded-tr-166 rounded-bl-166 w-full mt-32">
-                            <Image
-                                src="/images/hero/maria.png"
-                                alt="hero"
-                                width={0}
-                                height={0}
-                                quality={100}
-                                layout="responsive"
-                                sizes="100vh"
-                                className="w-full h-full"
-                            />
-                            <div className="bg-Aquamarine rounded-22 shadow-hero-box py-4 px-5 absolute top-24 -right-20 xl:inline-block hidden">
-                                <p className="text-lg font-bold text-green-800">Mariya John</p>
-                                <p className="text-base font-medium text-green-800 text-center">
-                                    4.9 rating
-                                </p>
-                            </div>
-                        </div>
+        
+                        
                     </div>
                 </div>
             </div>

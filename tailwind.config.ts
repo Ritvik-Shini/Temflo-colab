@@ -80,13 +80,13 @@ const config: Config = {
         '3': '3',
       },      
       colors: {
-        primary: "#2F73F2",
+        primary: "#883FFC",
         secondary: "#102C46",
         SereneSky: "#8FACC6",
-        ElectricAqua: "#46C4FF",
+        ElectricAqua: "#0a130e",
         RegalBlue: "#13439B",
         LightYellow: "#FFE15A",
-        IcyBreeze: "#EFFBFF",
+        IcyBreeze: "#e4daf3",
         PaleCyan: "#CFF4FF",
         Aquamarine: "#7DF9C2",
         MidnightNavyText: "#102D47",
@@ -111,6 +111,7 @@ const config: Config = {
         darktext: "#7F8487",
         dark_border: "#224767",
         dark_input: "#1B2430",
+        white: "#FFFFFF"
       },
       fontSize: {
         58: [
