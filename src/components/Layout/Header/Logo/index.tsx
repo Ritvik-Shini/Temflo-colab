@@ -6,20 +6,20 @@ const Logo: React.FC = () => {
     return (
         <Link href="/">
             <Image
-                src="/images/logo/logo.svg"
+                src="/images/logo/TSPL-Logo.png"
                 alt="logo"
-                width={160}
-                height={50}
-                style={{ width: 'auto', height: 'auto' }}
+                width={68}
+                height={22}
+                style={{ width: '68', height: '22' }}
                 quality={100}
                 className='dark:hidden'
             />
             <Image
-                src="/images/footer/footer-logo-white.svg"
+                src="/images/footer/TSPL-Logo.png"
                 alt="logo"
-                width={160}
-                height={50}
-                style={{ width: 'auto', height: 'auto' }}
+                width={68}
+                height={22}
+                style={{ width: '68', height: '22' }}
                 quality={100}
                 className='dark:block hidden'
             />
