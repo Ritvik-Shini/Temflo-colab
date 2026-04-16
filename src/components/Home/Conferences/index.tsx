@@ -21,17 +21,17 @@ const Conferences = () => {
               data-aos-delay="200"
               data-aos-duration="1000"
             >
-              <h2>Best Online and Offline Conferences</h2>
+              <h2 className="font-bold text-2xl">
+                Digital & Monitoring Solutions
+              </h2>
               <p className="text-lg font-normal text-SlateBlueText dark:text-opacity-80 max-w-506 md:pt-9 pt-5 md:pb-14 pb-6">
-                Sometimes by accident, sometimes chunks as necessary making this
-                the first true generator on the Internet. recently with desktop
-                publishing software like Aldus PageMaker
+                Temflo provides future proof display system. Offering a variety of products like immersive display, Outdoor LED display and DLP based video walls
               </p>
               <Link
                 href="/"
                 className="btn_outline btn-2 hover-outline-slide-down"
               >
-                <span>Upcoming conferences</span>
+                <span>More Projects</span>
               </Link>
             </div>
           </div>
