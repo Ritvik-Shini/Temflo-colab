@@ -2,20 +2,33 @@ export const speakers = [
     {
         id: 1,
         src: "/images/world-class-speakers/speakers_1.png",
+<<<<<<< HEAD
         alt: "project division",
         name: "Digital Museum Solution",
         designation: "Interactive displays, touch screens, VR/AR experience ke through museum ko modern banana.",
+=======
+        alt: "work class speakers",
+        name: "Darrell Steward",
+        designation: "Designation",
+>>>>>>> upstream/main
     },
     {
         id: 2,
         src: "/images/world-class-speakers/speakers_2.png",
+<<<<<<< HEAD
         alt: "project division",
         name: "Display & Monitoring Solutions",
         designation: "LED video walls, control rooms, real-time monitoring systems (traffic, security, data monitoring, etc.).",
+=======
+        alt: "work class speakers",
+        name: "Darrell Steward",
+        designation: "Designation",
+>>>>>>> upstream/main
     },
     {
         id: 3,
         src: "/images/world-class-speakers/speakers_3.png",
+<<<<<<< HEAD
         alt: "project division",
         name: "Light & Sound Shows",
         designation: "Historical places, events aur public areas ke liye synchronized light aur audio storytelling shows.",
@@ -26,13 +39,31 @@ export const speakers = [
         alt: "project division",
         name: "Control Command Center",
         designation: "Our command centre focuses on creating a sustainable, safe, and modern workspace with advanced technology, ergonomic designs, and modular desks for efficient operations.",
+=======
+        alt: "work class speakers",
+        name: "Darrell Steward",
+        designation: "Designation",
+    },
+    {
+        id: 4,
+        src: "/images/world-class-speakers/speakers_4.png",
+        alt: "work class speakers",
+        name: "Darrell Steward",
+        designation: "Designation",
+>>>>>>> upstream/main
     },
     {
         id: 5,
         src: "/images/world-class-speakers/speakers_5.png",
+<<<<<<< HEAD
         alt: "project division",
         name: "Emergency warning system",
         designation: "An Emergency Warning System provides real-time alerts and notifications to ensure quick response and enhance public safety during critical situations.",
+=======
+        alt: "work class speakers",
+        name: "Darrell Steward",
+        designation: "Designation",
+>>>>>>> upstream/main
     },
 ];
 
