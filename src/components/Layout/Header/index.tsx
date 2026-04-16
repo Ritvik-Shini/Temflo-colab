@@ -123,7 +123,7 @@ const Header: React.FC = () => {
                 setIsSignInOpen(true);
               }}
             >
-              <span className="!py-2 !px-4">Sign In</span>
+              <span className="!py-2 !px-4">Join Us</span>
             </Link>
             {isSignInOpen && (
               <div
@@ -149,7 +149,7 @@ const Header: React.FC = () => {
                 setIsSignUpOpen(true);
               }}
             >
-              <span className="!py-2 !px-4">Sign Up</span>
+              <span className="!py-2 !px-4">Contact Us</span>
             </Link>
             {isSignUpOpen && (
               <div
