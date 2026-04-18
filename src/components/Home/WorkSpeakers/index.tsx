@@ -1,3 +1,4 @@
+
 "use client";
 import React from "react";
 import Image from "next/image";
@@ -11,7 +12,7 @@ const WorkSpeakers = ({ showTitle = true }) => {
     <>
       <section className={` dark:bg-darkmode ${pathname === "/" ? "" : ""}`}>
         {showTitle && (
-          <h2 className="text-center pb-12">World Class Speakers</h2>
+          <h2 className="text-center pb-12">Project Division</h2>
         )}
         <div className="grid lg:grid-cols-5 sm:grid-cols-2 grid-cols-1 items-stretch gap-8 mx-7">
           {speakers.map((speaker, index) => (
@@ -48,6 +49,21 @@ const WorkSpeakers = ({ showTitle = true }) => {
           ))}
         </div>
       </section>
+      <div className="w-full col-span-8 flex justify-end">
+        <Link
+                                href="/"
+                                data-aos="fade-up"
+                                data-aos-delay="500"
+                                data-aos-duration="1000"
+                                className="btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden"
+                            >
+                                <span className="!flex !items-center gap-14">
+                                    
+                                    More Details
+                                </span>
+                            </Link>
+      </div>
+      <br></br><br></br>
     </>
   );
 };

@@ -31,7 +31,7 @@ const TicketSection = () => {
                                     href="/"
                                     className="btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden before:bg-white"
                                 >
-                                    <span className="sm:!px-20 px-10 !border-ElectricAqua !text-ElectricAqua ">
+                                    <span className="sm:!px-20 px-10 !border-white !text-ElectricAqua ">
                                         Join Us 
                                     </span>
                                 </Link>

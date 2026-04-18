@@ -173,7 +173,7 @@ const Footer: FC = () => {
                                 />
                                 <button
                                     type="submit"
-                                    className="btn btn-1 hover-filled-slide-down bg-RegalBlue"
+                                    className="btn btn-1 hover-filled-slide-down bg-primary"
                                 >
                                     <span className="!border-0 !text-white">Subscribe</span>
                                 </button>
