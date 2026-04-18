@@ -4,19 +4,19 @@ import HeroSub from "@/components/SharedComponent/HeroSub";
 import { Metadata } from "next";
 import TicketSection from "@/components/Home/TicketSection";
 export const metadata: Metadata = {
-  title: "Blog | Symposium",
+  title: "Blog | Temflo",
 };
 
 const BlogPage = () => {
     const breadcrumbLinks = [
         { href: "/", text: "Home" },
-        { href: "/blog", text: "Blog" },
+        { href: "/Project", text: "Project" },
     ];
     return (
         <>
             <HeroSub
-                title="Blog"
-                description="Discover a wealth of insightful materials meticulously crafted to provide you with a comprehensive understanding of the latest trends."
+x                title="Welcome to Our Project"
+                description="Each of our project is distinguishable, every facility different, and each client unique. Through these projects, we have developed a strong understanding of the procedures and strategies to position our project teams and clients for success."
                 breadcrumbLinks={breadcrumbLinks}
             />
             <BlogList />

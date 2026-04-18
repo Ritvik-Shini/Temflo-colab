@@ -8,19 +8,19 @@ import Testimonial from "@/components/SharedComponent/Testimonial";
 import Testimonials from "@/components/Home/Testimonials";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Schedules | Symposium",
+  title: "Why us | Symposium",
 };
 
 const page = () => {
   const breadcrumbLinks = [
     { href: "/", text: "Home" },
-    { href: "/schedules", text: "Schedules" },
+    { href: "/schedules", text: "Why Us" },
   ];
   return (
     <>
       <HeroSub
-        title="Event Schedules"
-        description="Discover a wealth of insightful materials meticulously crafted to provide you with a comprehensive."
+        title="Why Choose Us ?"
+        description="Choosing us means partnering with a company that combines extensive experience with a commitment to pushing the boundaries of what is possible, delivering exceptional value, and creating impactful experiences."
         breadcrumbLinks={breadcrumbLinks}
       />
       <section className="dark:bg-darkmode">  
