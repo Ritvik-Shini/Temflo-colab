@@ -30,6 +30,8 @@ const Industries = () => {
                                     />
                                   
                                 </div>
+
+                                <br></br><br></br>
                 </div>
         </>
              );
