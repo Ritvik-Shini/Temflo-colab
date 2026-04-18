@@ -38,19 +38,17 @@ export const speakers = [
 
 export const conferences = [
     {
-        title: "The Conference Construct Millennial",
+        title: "Temflo Systems provides Delhi Metro with integrated control room solutions, featuring ergonomic operator. ",
         profiles: [
-            "/images/upcoming/profile-1.png",
-            "/images/upcoming/profile-3.png"
+             "/images/upcoming/glass_1.png"   
+         
         ],
-        speakers: "Reena John & Lorance",
-        buttonText: "Book Ticket",
-        buttonLink: "/"
+   
     }, // Profile-1
     {
         title: "Local Business Global Event",
         profiles: [
-            "/images/upcoming/profile-2.png"
+            "/images/upcoming/glass_2.png"
         ],
         speakers: "Martin Luthar",
         buttonText: "Book Ticket",
@@ -59,69 +57,56 @@ export const conferences = [
     {
         title: "Frontiers Conference Perspectives",
         profiles: [
-            "/images/upcoming/profile-4.png"
+            "/images/upcoming/glass_4.png"
         ],
-        speakers: "Martin Luthar",
-        buttonText: "Book Ticket",
-        buttonLink: "/"
+        
     }, // Profile-3
     {
         title: "A Focus Conference Initiatives",
         profiles: [
-            "/images/upcoming/profile-7.png"
+            "/images/upcoming/glass_7.png"
         ],
-        speakers: "Martin Luthar",
-        buttonText: "Book Ticket",
-        buttonLink: "/"
+        
     }, // Profile-4
     {
         title: "Science and Beyond",
         profiles: [
-            "/images/upcoming/profile-6.png",
-            "/images/upcoming/profile-5.png",
+            "/images/upcoming/glass_6.png",
+            
         ],
-        speakers: "Reena John & Lorance",
-        buttonText: "Book Ticket",
-        buttonLink: "/"
+       
+       
     }, // Profile-5
     {
         title: "Global Event",
         profiles: [
-            "/images/upcoming/profile-2.png"
+            "/images/upcoming/glass_8.png",
         ],
-        speakers: "Martin Luthar",
-        buttonText: "Book Ticket",
-        buttonLink: "/"
+        
     }, // Profile-6
     {
         title: "Cultural Exchange in the Digital Age",
         profiles: [
-            "/images/upcoming/profile-4.png"
+            "/images/upcoming/glass_9.png",
         ],
-        speakers: "Martin Luthar",
-        buttonText: "Book Ticket",
-        buttonLink: "/"
+       
     }, // Profile-7
     {
         title: "Education for Tomorrow",
         profiles: [
-            "/images/upcoming/profile-7.png"
+            "/images/upcoming/glass_10.png",
         ],
-        speakers: "Martin Luthar",
-        buttonText: "Book Ticket",
-        buttonLink: "/"
+        
     }, // Profile-8
 ];
 
 export const intermissions = [
     {
         title: "Coffee Break",
-        image: "/images/upcoming/alarm.svg",  // Path to the coffee break image
-        time: "10:00 - 10:30", // Time for the coffee break
+        image: "/images/upcoming/glass_3.png",  
     },
     {
         title: "Lunch Time",
-        image: "/images/upcoming/alarm.svg",  // Path to the lunch break image
-        time: "12:30 - 13:30", // Time for the lunch break
+        image: "/images/upcoming/glass_5.png", 
     },
 ];

@@ -11,7 +11,7 @@ const Schedules = () => {
           <React.Fragment key={index}  >
             <div data-aos="fade-up" data-aos-delay={`${index*200}`} data-aos-duration="1000"  className="flex items-center flex-wrap gap-6 justify-between w-full md:py-12 py-5 border-b border-solid border-border dark:border-dark_border last:border-b-0">
               <div className="lg:min-w-96 min-w-max" >
-                <h6 className="text-[26px] leading-[2.1rem] font-bold text-secondary dark:text-white max-w-286">
+                <h6 className="text-[20px] leading-[2.1rem] font-bold text-secondary dark:text-white max-w-286">
                   {conference.title}
                 </h6>
               </div>
@@ -27,7 +27,7 @@ const Schedules = () => {
                       quality={100}
                       layout="responsive"
                       sizes="100vh"
-                      className={`!w-16 !h-16 rounded-full ${
+                      className={`!w-26 !h-20  ${
                         profileIndex !== conference.profiles.length - 1
                           ? "-mr-3"
                           : ""
@@ -35,30 +35,16 @@ const Schedules = () => {
                     />
                   ))}
                 </div>
-                <div>
-                  <p className="text-lg font-normal text-SlateBlueText dark:text-opacity-80">
-                    Speech by
-                  </p>
-                  <p className="text-lg font-medium text-secondary dark:text-white">
-                    {conference.speakers}
-                  </p>
-                </div>
+                
               </div>
-              <div className="lg:min-w-40 min-w-max" >
-                <Link
-                  href={conference.buttonLink}
-                  className="btn_outline btn-2 btn_outline hover-outline-slide-down"
-                >
-                  <span>{conference.buttonText}</span>
-                </Link>
-              </div>
+             
             </div>
 
             {/* Insert intermissions at appropriate places */}
             {index === 1 && (
               <div data-aos="fade-up" data-aos-delay={`${index*200}`} data-aos-duration="1000" className="flex items-center flex-wrap justify-between w-full md:py-12 py-5 border-b border-solid border-border dark:border-dark_border">
                 <div className="lg:min-w-96 min-w-max">
-                  <h6 className="text-[26px] leading-[2.1rem] font-bold text-secondary dark:text-white max-w-286">
+                  <h6 className="text-[20px] leading-[2.1rem] font-bold text-secondary dark:text-white max-w-286">
                     {intermissions[0].title}
                   </h6>
                 </div>
@@ -72,7 +58,7 @@ const Schedules = () => {
                       quality={100}
                       layout="responsive"
                       sizes="100vh"
-                      className="!w-10 !h-10 rounded-full"
+                      className="!w-18 !h-12 "
                     />
                   </div>
                   <div>                    
@@ -88,7 +74,7 @@ const Schedules = () => {
             {index === 3 && (
               <div data-aos="fade-up" data-aos-delay={`${index*200}`} data-aos-duration="1000" className="flex items-center flex-wrap justify-between w-full md:py-12 py-5 border-b border-solid border-border dark:border-dark_border">
                 <div className="lg:min-w-96 min-w-max">
-                  <h6 className="text-[26px] leading-[2.1rem] font-bold text-secondary dark:text-white max-w-286">
+                  <h6 className="text-[20px] leading-[2.1rem] font-bold text-secondary dark:text-white max-w-286">
                     {intermissions[1].title}
                   </h6>
                 </div>
@@ -102,7 +88,7 @@ const Schedules = () => {
                       quality={100}
                       layout="responsive"
                       sizes="100vh"
-                      className="!w-10 !h-10 rounded-full"
+                      className="!w-26 !h-20 "
                     />
                   </div>
                   <div>                    
