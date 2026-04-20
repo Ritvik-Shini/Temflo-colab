@@ -35,7 +35,7 @@ const Hero = () => {
                         </p>
                         <div className="flex items-center md:justify-normal lg:justify-center justify-start flex-wrap gap-4">
                             <Link
-                                href="/"
+                                href="/schedules"
                                 data-aos="fade-up"
                                 data-aos-delay="500"
                                 data-aos-duration="1000"
@@ -47,7 +47,7 @@ const Hero = () => {
                                 </span>
                             </Link>
                             <Link
-                                href="/"
+                                href="/blog"
                                 data-aos="fade-up"
                                 data-aos-delay="600"
                                 data-aos-duration="1000"
