@@ -6,6 +6,7 @@ import { speakers } from "@/app/api/data";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
+
 const WorkSpeakers = ({ showTitle = true }) => {
   const pathname = usePathname();
   return (
@@ -51,7 +52,7 @@ const WorkSpeakers = ({ showTitle = true }) => {
       </section>
       <div className="w-full col-span-8 flex justify-end">
         <Link
-                                href="/"
+                                href="/speakers"
                                 data-aos="fade-up"
                                 data-aos-delay="500"
                                 data-aos-duration="1000"

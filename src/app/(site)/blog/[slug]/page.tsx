@@ -97,23 +97,7 @@ export default async function Post({ params }: any) {
                                 {post.title}
                             </h2>
                         </div>
-                        <div className="flex items-center md:justify-center justify-start gap-6 col-span-4 pt-4 md:pt-0">
-                            <Image
-                                src={post.authorImage}
-                                alt="image"
-                                className="bg-no-repeat bg-contain inline-block rounded-full !w-20 !h-20"
-                                width={40}
-                                height={40}
-                                layout="responsive"
-                                quality={100}
-                            />
-                            <div className="">
-                                <span className="text-[22px] leading-[1.2] font-bold text-midnight_text dark:text-white">
-                                    Silicaman
-                                </span>
-                                <p className="text-xl text-gray dark:text-white">Author</p>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </section>
@@ -133,7 +117,7 @@ export default async function Post({ params }: any) {
                             </div>
                             <div className="-mx-4 flex flex-wrap">
                                 <div className="w-full px-4 lg:w-8/12">
-                                    <div className="blog-details xl:pr-10">
+                                    <div className="blog-details xl:pr-10 text-lg">
                                         <div dangerouslySetInnerHTML={{ __html: content }}></div>
                                     </div>
                                 </div>

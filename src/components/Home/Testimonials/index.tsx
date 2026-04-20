@@ -74,7 +74,8 @@ const Testimonials = () => {
                                        Product and Project Sales <br></br>
                                        SCADA,Historian,Report <br></br>
                                        Energy management System <br></br>
-                                       IoT based supervision & monitoring.                                   </p>
+                                       IoT based supervision & monitoring.     
+                                    </p>
                                    </div>
                                     <div className="flex items-center gap-8">
                                      
