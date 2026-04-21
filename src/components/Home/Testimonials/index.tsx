@@ -61,15 +61,17 @@ const Testimonials = () => {
                                     <h2 className="max-w-100 text-center">TimeLine <br></br> Our Company Milestones</h2>
                                     <br></br>
                                   <div className="bg-white dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-white py-3 max-w-80">
+                                       <h2>2001</h2>
                                     <p className="text-lg font-normal text-primary dark:text-opacity-80 py-3 max-w-80">
-                                        <h2>2001</h2>
+                                     
                                         We founded in 2001 and start the organization as a distributor in process instrumentation .
                                     </p>
                                    </div>
                                    <br></br><br></br>
                                    <div className="bg-white dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-white py-3 max-w-80">
+                                          <h2>2006</h2>
                                     <p className="text-lg font-normal text-primary text-center dark:text-opacity-80 py-3 max-w-80">
-                                       <h2>2006</h2>
+                                   
                                        Consultancy and Engineering <br></br>
                                        Product and Project Sales <br></br>
                                        SCADA,Historian,Report <br></br>
@@ -111,18 +113,22 @@ const Testimonials = () => {
                                     <h2 className="max-w-100 text-center">TimeLine <br></br> Our Company Milestones</h2>
                                     <br></br>
                                  <div className="bg-white dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-white py-3 max-w-80">
+                                        <h2>2011 </h2>
                                     <p className="text-lg font-normal text-primary text-center dark:text-opacity-80 py-3 max-w-80">
-                                        <h2>2011</h2>
+                                        
+                                    
+                                        
                                          Control Panel Manufacturing for PLC/ RTU/SCADA <br></br>
-                                          Energy management System.<br></br>
+                                         Energy management System.<br></br>
                                          Unified systems for CCTV. Data & analytics.<br></br>
-                                          Turnkey Automation Solution Provider.<br></br>                                           
+                                         Turnkey Automation Solution Provider.<br></br>                                           
                                     </p>
                                   </div>
                                   <br></br><br></br>
                                 <div className="bg-white dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-white py-3 max-w-80">
+                                      <h2>2016</h2>
                                     <p className="text-lg font-normal text-primary text-center dark:text-opacity-80 py-3 max-w-80">
-                                        <h2>2016</h2>
+
                                             Smart City / Safe City /ITMS Solutions Provider<br></br>
                                             Command & Control Centre solutions<br></br>
                                             Software solutions<br></br>
