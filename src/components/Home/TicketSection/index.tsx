@@ -28,7 +28,7 @@ const TicketSection = () => {
                                     Become a Part of Temflo System
                                 </p>
                                 <Link
-                                    href="/"
+                                    href="/joinus"
                                     className="btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden before:bg-white"
                                 >
                                     <span className="sm:!px-20 px-10 !border-white !text-ElectricAqua ">
