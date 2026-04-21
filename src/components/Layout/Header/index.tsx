@@ -15,6 +15,8 @@ import { FailedLogin } from "@/components/Auth/AuthDialog/FailedLogin";
 import { UserRegistered } from "@/components/Auth/AuthDialog/UserRegistered";
 import AuthDialogContext from "@/app/context/AuthDialogContext";
 
+
+
 const Header: React.FC = () => {
   const pathUrl = usePathname();
   const { theme, setTheme } = useTheme();
@@ -117,11 +119,8 @@ const Header: React.FC = () => {
               </svg>
             </button>
             <Link
-              href="#"
+              href="/joinus"
               className="hidden lg:block btn_outline btn-2 hover-outline-slide-down rounded-lg"
-              onClick={() => {
-                setIsSignInOpen(true);
-              }}
             >
               <span className="!py-2 !px-4">Join Us</span>
             </Link>
@@ -143,11 +142,9 @@ const Header: React.FC = () => {
               </div>
             )}
             <Link
-              href="#"
+              href="/contact"
               className="hidden lg:block btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden"
-              onClick={() => {
-                setIsSignUpOpen(true);
-              }}
+         
             >
               <span className="!py-2 !px-4">Contact Us</span>
             </Link>

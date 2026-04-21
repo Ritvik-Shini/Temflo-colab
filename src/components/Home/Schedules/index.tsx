@@ -63,7 +63,7 @@ const Schedules = () => {
                   </div>
                   <div>                    
                     <p className="text-lg font-normal text-SlateBlueText dark:text-opacity-80">
-                      {intermissions[0].time}
+                      {intermissions[0].title}
                     </p>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ const Schedules = () => {
                   </div>
                   <div>                    
                     <p className="text-lg font-normal text-SlateBlueText dark:text-opacity-80">
-                      {intermissions[1].time}
+                      {intermissions[1].title}
                     </p>
                   </div>
                 </div>

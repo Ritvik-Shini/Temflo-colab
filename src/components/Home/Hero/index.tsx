@@ -17,7 +17,7 @@ const Hero = () => {
                             
                         </p>
                         <h1
-                            className="py-4"
+                            className="py-4 text-primary dark:text-white"
                             data-aos="fade-up"
                             data-aos-delay="300"
                             data-aos-duration="1000"

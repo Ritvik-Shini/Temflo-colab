@@ -19,7 +19,7 @@ const Industries = () => {
                         </h1>
                                 <div className="bg-ElectricAqua relative rounded-tl-166 rounded-br-166 w-full">
                                     <Image
-                                        src="/images/hero/industries.png"
+                                        src="/images/hero/Industries.png"
                                         alt="hero"
                                         width={0}
                                         height={0}
