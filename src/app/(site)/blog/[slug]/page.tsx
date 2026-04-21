@@ -1,12 +1,16 @@
-// import Newsletter from "@/components/Blog/Newsletter";
-// import PopularArticle from "@/components/Blog/PopularArticle";
-// import SingleBlog from "@/components/Blog/SingleBlog";
 import { getAllPosts, getPostBySlug, getPostSlugs } from "@/utils/markdown";
 import TicketSection from "@/components/Home/TicketSection";
 import markdownToHtml from "@/utils/markdownToHtml";
 import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
+
+export async function generateStaticParams() {
+    const slugs = getPostSlugs();
+    return slugs.map((slug) => ({
+        slug: slug.replace(/\.mdx$/, ''),
+    }));
+}
 
 type Props = {
     params: { slug: string };
@@ -221,9 +225,4 @@ export default async function Post({ params }: any) {
             <TicketSection />
         </>
     );
-}
-
-export async function generateStaticParams() {
-    const slugs = getPostSlugs().map((s) => s.replace(/\.mdx$/, ""));
-    return slugs.map((slug) => ({ slug }));
 }
