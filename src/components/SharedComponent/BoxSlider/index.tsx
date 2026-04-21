@@ -40,7 +40,7 @@ const BoxSlider = () => {
   return (
     <>
       <Slider {...settings} className="text-center">
-        <div className="bg-IcyBreeze dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-primary">
+        
            <div className="mt-14 relative">
                                                                 <Image
                                                                     src="/images/hero/Delhi Metro.png"
@@ -54,23 +54,23 @@ const BoxSlider = () => {
                                                                 ></Image>
             </div>
         
-        </div>
-        <div className="bg-IcyBreeze dark:bg-darklight pt-0 pb-2 rounded-lg text-center group hover:bg-primary">
+        
+        
          <div className="mt-14 relative">
                                                                <Image
                                                                     src="/images/hero/Bharat_Electronics.png"
                                                                     alt="Product"
-                                                                    width={85}
-                                                                    height={75}
-                                                                    style={{width:'85', height:'75'}}
+                                                                    width={100}
+                                                                    height={95}
+                                                                    style={{width:'100', height:'95'}}
                                                                     quality={100}
                                                                     sizes="100vh"
                                                                     className="dark"
                                                                 ></Image>
           </div>
           
-        </div>
-        <div className="bg-IcyBreeze dark:bg-darklight pt-4 pb-6 rounded-lg text-center group hover:bg-primary">
+        
+        
          <div className="mt-14 relative">
                                                                <Image
                                                                     src="/images/hero/Honeywell.png"
@@ -83,8 +83,8 @@ const BoxSlider = () => {
                                                                     className="dark"
                                                                 ></Image>
         </div>
-       </div>
-        <div className="bg-IcyBreeze dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-primary">
+       
+        
           <div className="mt-14 relative">
                                                                <Image
                                                                     src="/images/hero/hfcl.png"
@@ -97,8 +97,8 @@ const BoxSlider = () => {
                                                                     className="dark"
                                                                 ></Image>
          </div>
-       </div>
-        <div className="bg-IcyBreeze dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-primary">
+       
+        
           <div className="mt-14 relative">
                                                                <Image
                                                                     src="/images/hero/NTPC.png"
@@ -111,8 +111,8 @@ const BoxSlider = () => {
                                                                     className="dark"
                                                                 ></Image>
          </div>
-        </div>
-        <div className="bg-IcyBreeze dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-primary">
+        
+      
           <div className="mt-14 relative">
                                                                <Image
                                                                     src="/images/hero/Tech mahindra.png"
@@ -125,8 +125,8 @@ const BoxSlider = () => {
                                                                     className="dark"
                                                                 ></Image>
          </div>
-        </div>
-        <div className="bg-IcyBreeze dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-primary">
+        
+    
            <div className="mt-14 relative">
                                                                <Image
                                                                     src="/images/hero/LT.png"
@@ -139,8 +139,8 @@ const BoxSlider = () => {
                                                                     className="dark"
                                                                 ></Image>
          </div>
-        </div>
-        <div className="bg-IcyBreeze dark:bg-darklight pt-1 pb-3 rounded-lg text-center group hover:bg-primary">
+        
+        
           <div className="mt-14 relative">
                                                                <Image
                                                                     src="/images/hero/WELSPUN.png"
@@ -153,8 +153,8 @@ const BoxSlider = () => {
                                                                     className="dark"
                                                                 ></Image>
          </div>
-        </div>
-        <div className="bg-IcyBreeze dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-primary">
+        
+        
            <div className="mt-14 relative">
                                                                <Image
                                                                     src="/images/hero/Ujvn Limited.png"
@@ -167,7 +167,7 @@ const BoxSlider = () => {
                                                                     className="dark"
                                                                 ></Image>
          </div>
-        </div>
+      
       </Slider>
     </>
   );
