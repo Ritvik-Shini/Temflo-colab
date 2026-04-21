@@ -7,6 +7,7 @@ import Highlight from '@/components/Home/YearHighlight/page';
 import Upcoming from '@/components/Home/Upcoming';
 import TicketSection from '@/components/Home/TicketSection';
 import Industries from '@/components/Home/industries/industriesweserve';
+
 export const metadata: Metadata = {
   title: "Temflo",
 };
@@ -19,8 +20,10 @@ export default function Home() {
       <ThumbnailCarousel/>
       <WorkSpeakers/>
       <Industries/>
+     
       <Highlight/>
       <Upcoming/>
+    
       <TicketSection/>
 
     
