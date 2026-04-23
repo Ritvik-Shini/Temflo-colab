@@ -92,18 +92,15 @@ const Testimonials = () => {
                     <div className="grid grid-cols-12 gap-4 items-start">
                         {/* Mobile Image - Full width on mobile */}
                         <div className="col-span-12 flex justify-center mb-6">
-                            <div className="relative w-full h-64 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden shadow-xl">
-                                <Image
-                                    src="/images/hero/Black_1.png"
-                                    alt="Company Timeline"
-                                    fill
-                                    quality={100}
-                                    priority
-                                    // Set to object-contain to prevent cropping
-                                    className="object-contain"
-                                    sizes="(max-width: 768px) 100vw, 50vw"
-                                />
-                            </div>
+                            <Image
+                                src="/images/hero/Black_1.png"
+                                alt="Company Timeline"
+                                width={320}
+                                height={400}
+                                quality={100}
+                                priority
+                                className="w-full h-auto rounded-lg shadow-xl"
+                            />
                         </div>
                         
                         {/* Mobile Slider */}
