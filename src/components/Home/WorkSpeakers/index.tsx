@@ -1,4 +1,3 @@
-
 "use client";
 import React from "react";
 import Image from "next/image";
@@ -6,9 +5,14 @@ import { speakers } from "@/app/api/data";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-
 const WorkSpeakers = ({ showTitle = true }) => {
   const pathname = usePathname();
+
+  // Filter the speakers to include only IDs 1 through 5
+  const filteredSpeakers = speakers.filter(
+    (speaker) => speaker.id >= 1 && speaker.id <= 5
+  );
+
   return (
     <>
       <section className={` dark:bg-darkmode ${pathname === "/" ? "" : ""}`}>
@@ -16,7 +20,7 @@ const WorkSpeakers = ({ showTitle = true }) => {
           <h2 className="text-center pb-12">Project Division</h2>
         )}
         <div className="grid lg:grid-cols-5 sm:grid-cols-2 grid-cols-1 items-stretch gap-8 mx-7">
-          {speakers.map((speaker, index) => (
+          {filteredSpeakers.map((speaker, index) => (
             <div
               key={speaker.id}
               data-aos="fade-up"
@@ -39,12 +43,14 @@ const WorkSpeakers = ({ showTitle = true }) => {
                 />
               </div>
               <div className="pt-6">
+               <Link href={speaker.href}> 
                 <h6 className="text-[28px] leading-[2.25rem] font-bold text-secondary dark:text-white">
                   {speaker.name}
                 </h6>
                 <span className="text-lg font-normal text-SlateBlueText dark:text-opacity-80">
                   {speaker.designation}
                 </span>
+               </Link>
               </div>
             </div>
           ))}
@@ -52,22 +58,20 @@ const WorkSpeakers = ({ showTitle = true }) => {
       </section>
       <div className="w-full col-span-8 flex justify-end">
         <Link
-                                href="/speakers"
-                                data-aos="fade-up"
-                                data-aos-delay="500"
-                                data-aos-duration="1000"
-                                className="btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden"
-                            >
-                                <span className="!flex !items-center gap-14">
-                                    
-                                    More Details
-                                </span>
-                            </Link>
+          href="/speakers"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+          className="btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden"
+        >
+          <span className="!flex !items-center gap-14">
+            More Details
+          </span>
+        </Link>
       </div>
-      <br></br><br></br>
+      <br /><br />
     </>
   );
 };
 
 export default WorkSpeakers;
-

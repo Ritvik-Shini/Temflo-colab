@@ -219,24 +219,18 @@ const Header: React.FC = () => {
           ))}
           <div className="mt-4 flex flex-col space-y-4 w-full">
             <Link
-              href="#"
+              href="/joinus"
               className="bg-transparent border border-solid border-primary text-primary px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white"
-              onClick={() => {
-                setIsSignInOpen(true);
-                setNavbarOpen(false);
-              }}
+     
             >
-              Sign In
+              Join Us
             </Link>
             <Link
-              href="#"
+              href="/contact"
               className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700"
-              onClick={() => {
-                setIsSignUpOpen(true);
-                setNavbarOpen(false);
-              }}
+         
             >
-              Sign Up
+              Contact Us
             </Link>
           </div>
         </nav>

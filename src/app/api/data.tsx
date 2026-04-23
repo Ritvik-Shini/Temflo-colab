@@ -4,6 +4,7 @@ export const speakers = [
         src: "/images/world-class-speakers/panda_1.png",
         alt: "project division",
         name: "Digital Museum",
+        href: "/digital-museum",
         designation: "Interactive displays, touch screens, VR/AR experience ke through museum ko modern banana.",
     },
     {
@@ -11,6 +12,7 @@ export const speakers = [
         src: "/images/world-class-speakers/panda_2.png",
         alt: "project division",
         name: "Display & Monitoring Solutions",
+        href: "/display-monitoring-solutions",
         designation: "LED video walls, control rooms, real-time monitoring systems (traffic, security, data monitoring, etc.).",
     },
     {
@@ -18,6 +20,7 @@ export const speakers = [
         src: "/images/world-class-speakers/panda_3.png",
         alt: "project division",
         name: "Light & Sound Shows",
+        href: "/light-sound-show",
         designation: "Historical places, events aur public areas ke liye synchronized light aur audio storytelling shows.",
     },
     {
@@ -25,6 +28,7 @@ export const speakers = [
         src: "/images/world-class-speakers/panda_4.png",
         alt: "project division",
         name: "Control Command Center",
+        href: "/control-command-center",
         designation: "Our command centre focuses on creating a sustainable, safe, and modern workspace with advanced technology, ergonomic designs, and modular desks for efficient operations.",
     },
     {
@@ -32,6 +36,46 @@ export const speakers = [
         src: "/images/world-class-speakers/panda_5.png",
         alt: "project division",
         name: "Emergency warning system",
+        href: "/emergency-warning-system",
+        designation: "An Emergency Warning System provides real-time alerts and notifications to ensure quick response and enhance public safety during critical situations.",
+    },
+    {
+        id: 6,
+        src: "/images/world-class-speakers/panda_3.png",
+        alt: "project division",
+        name: "Workspace Solution",
+        href: "/workspace-solution",
+        designation: "An Emergency Warning System provides real-time alerts and notifications to ensure quick response and enhance public safety during critical situations.",
+    },
+       {
+        id: 7,
+        src: "/images/world-class-speakers/panda_3.png",
+        alt: "project division",
+        name: "Energy Portfolio Management",
+        href: "/energy-portfolio-management",
+        designation: "An Emergency Warning System provides real-time alerts and notifications to ensure quick response and enhance public safety during critical situations.",
+    },   {
+        id: 8,
+        src: "/images/world-class-speakers/panda_3.png",
+        alt: "project division",
+        name: "Control And Instrumentation",
+        href: "/control-and-instrumentation",
+        designation: "An Emergency Warning System provides real-time alerts and notifications to ensure quick response and enhance public safety during critical situations.",
+    },
+       {
+        id: 9,
+        src: "/images/world-class-speakers/panda_3.png",
+        alt: "project division",
+        name: "Plc SCADA DCS Based Automation",
+        href: "/plc-scada-dcs-based-automation",
+        designation: "An Emergency Warning System provides real-time alerts and notifications to ensure quick response and enhance public safety during critical situations.",
+    },
+       {
+        id: 10,
+        src: "/images/world-class-speakers/panda_3.png",
+        alt: "project division",
+        name: "City beautification",
+        href: "/city-beautification",
         designation: "An Emergency Warning System provides real-time alerts and notifications to ensure quick response and enhance public safety during critical situations.",
     },
 ];
@@ -102,11 +146,11 @@ export const conferences = [
 
 export const intermissions = [
     {
-        title: "Coffee Break",
+        title: "dummy",
         image: "/images/upcoming/glass_3.png",  
     },
     {
-        title: "Lunch Time",
+        title: "demo",
         image: "/images/upcoming/glass_5.png", 
     },
 ];

@@ -4,6 +4,7 @@ import Link from "next/link";
 const Hero = () => {
     return (
         <section className="dark:bg-darkmode">
+            <br></br><br></br>
             <div className="container">
                 <div className="grid lg:grid-cols-12 grid-cols-1 items-center gap-30">
                     <div className="col-span-6">

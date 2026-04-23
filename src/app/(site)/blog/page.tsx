@@ -85,6 +85,13 @@ const BlogPage = () => {
   </button>
   </Link>
 
+{/* Category Filter: City beautification*/}
+    <Link href="/city-beautification">
+  <button className="border-2 border-gray-200 text-gray-500 px-6 py-3 rounded-xl font-semibold hover:border-blue-600 hover:text-blue-600 transition-all active:scale-95">
+   City beautification
+  </button>
+  </Link>
+
 </div>
             <BlogList />
             <TicketSection/>

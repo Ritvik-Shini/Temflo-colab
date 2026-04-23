@@ -1,17 +1,51 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+// @ts-ignore
 import "slick-carousel/slick/slick.css";
+// @ts-ignore
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const Testimonials = () => {
+    const slides = [
+        {
+            id: 1,
+            items: [
+                {
+                    year: "2001",
+                    description: "We founded in 2001 and started the organization as a distributor in process instrumentation.",
+                },
+                {
+                    year: "2006",
+                    description: "Consultancy and Engineering\nProduct and Project Sales\nSCADA, Historian, Report\nEnergy management System\nIoT based supervision & monitoring",
+                }
+            ]
+        },
+        {
+            id: 2,
+            items: [
+                {
+                    year: "2011",
+                    description: "Control Panel Manufacturing for PLC/RTU/SCADA\nEnergy management System\nUnified systems for CCTV, Data & analytics\nTurnkey Automation Solution Provider",
+                },
+                {
+                    year: "2016",
+                    description: "Smart City / Safe City / ITMS Solutions Provider\nCommand & Control Centre solutions\nSoftware solutions\nOutdoor & Indoor display solutions",
+                }
+            ]
+        }
+    ];
+
     var settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnHover: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -27,6 +61,7 @@ const Testimonials = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    dots: true,
                 },
             },
             {
@@ -34,123 +69,123 @@ const Testimonials = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    dots: true,
                 },
             },
         ],
     };
-    return (
-        <>
-            <section className="bg-IcyBreeze dark:bg-darklight testimonial">
-                <div className="container">
-                    <Slider {...settings}>
-                        <div>
-                            <div className="grid md:grid-cols-12 grid-cols-1 items-center">
-                                <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" className="col-span-4 bg-LightSkyBlue sm:rounded-br-214 rounded-br-182 sm:rounded-tl-214 rounded-tl-182 relative before:content-[''] before:absolute before:bg-[url('/images/testimonials/quotes.png')] before:w-109 before:h-109 before:-right-10 before:top-32 lg:inline-block hidden">
-                                    <Image
-                                        src="/images/hero/Black_1.png"
-                                        alt="testimonials"
-                                        width={0}
-                                        height={0}
-                                        quality={100}
-                                        layout="responsive"
-                                        sizes="100vh"
-                                        className="w-full h-full"
-                                    />
-                                </div>
-                                <div data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" className="col-span-8 md:ml-28 ml-0">
-                                    <h2 className="max-w-100 text-center">TimeLine <br></br> Our Company Milestones</h2>
-                                    <br></br>
-                                  <div className="bg-white dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-white py-3 max-w-80">
-                                       <h2>2001</h2>
-                                    <p className="text-lg font-normal text-primary dark:text-opacity-80 py-3 max-w-80">
-                                     
-                                        We founded in 2001 and start the organization as a distributor in process instrumentation .
-                                    </p>
-                                   </div>
-                                   <br></br><br></br>
-                                   <div className="bg-white dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-white py-3 max-w-80">
-                                          <h2>2006</h2>
-                                    <p className="text-lg font-normal text-primary text-center dark:text-opacity-80 py-3 max-w-80">
-                                   
-                                       Consultancy and Engineering <br></br>
-                                       Product and Project Sales <br></br>
-                                       SCADA,Historian,Report <br></br>
-                                       Energy management System <br></br>
-                                       IoT based supervision & monitoring.     
-                                    </p>
-                                   </div>
-                                    <div className="flex items-center gap-8">
-                                     
-                                        <div>
-                                            
-                                            <div className="flex items-center">
-                                                
-                                                
-                                               
-                                        
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div className="grid md:grid-cols-12 grid-cols-1 items-center">
-                                <div className="col-span-4 bg-LightSkyBlue sm:rounded-br-214 rounded-br-182 sm:rounded-tl-214 rounded-tl-182 relative before:content-[''] before:absolute before:bg-[url('/images/testimonials/quotes.png')] before:w-109 before:h-109 before:-right-10 before:top-32 lg:inline-block hidden">
-                                    <Image
-                                        src="/images/hero/Black_1.png"
-                                        alt="testimonials"
-                                        width={0}
-                                        height={0}
-                                        quality={100}
-                                        layout="responsive"
-                                        sizes="100vh"
-                                        className="w-full h-full"
-                                    />
-                                </div>
-                                <div className="col-span-8 md:ml-28 ml-0">
-                                    <h2 className="max-w-100 text-center">TimeLine <br></br> Our Company Milestones</h2>
-                                    <br></br>
-                                 <div className="bg-white dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-white py-3 max-w-80">
-                                        <h2>2011 </h2>
-                                    <p className="text-lg font-normal text-primary text-center dark:text-opacity-80 py-3 max-w-80">
-                                        
-                                    
-                                        
-                                         Control Panel Manufacturing for PLC/ RTU/SCADA <br></br>
-                                         Energy management System.<br></br>
-                                         Unified systems for CCTV. Data & analytics.<br></br>
-                                         Turnkey Automation Solution Provider.<br></br>                                           
-                                    </p>
-                                  </div>
-                                  <br></br><br></br>
-                                <div className="bg-white dark:bg-darklight pt-2 pb-4 rounded-lg text-center group hover:bg-white py-3 max-w-80">
-                                      <h2>2016</h2>
-                                    <p className="text-lg font-normal text-primary text-center dark:text-opacity-80 py-3 max-w-80">
 
-                                            Smart City / Safe City /ITMS Solutions Provider<br></br>
-                                            Command & Control Centre solutions<br></br>
-                                            Software solutions<br></br>
-                                            Outdoor & Indoor display solutions<br></br>
-                                    </p>
-                                </div>
-                                    <div className="flex items-center gap-8">
-                                       
-                                        <div>
-                                           
-                                            <div className="flex items-center">
-                                              
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    return (
+        <section className="bg-IcyBreeze dark:bg-darklight py-8 md:py-24">
+            <div className="container px-4 md:px-0">
+                {/* Mobile Layout */}
+                <div className="block md:hidden">
+                    <div className="mb-6 text-center">
+                        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+                            TimeLine
+                        </h2>
+                        <p className="text-lg text-gray-600 dark:text-gray-400 font-medium">
+                            Our Company Milestones
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-12 gap-4 items-start">
+                        {/* Mobile Image - Full width on mobile */}
+                        <div className="col-span-12 flex justify-center mb-6">
+                            <div className="relative w-full h-64 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden shadow-xl">
+                                <Image
+                                    src="/images/hero/Black_1.png"
+                                    alt="Company Timeline"
+                                    fill
+                                    quality={100}
+                                    priority
+                                    // Set to object-contain to prevent cropping
+                                    className="object-contain"
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                />
                             </div>
                         </div>
-                    </Slider>
+                        
+                        {/* Mobile Slider */}
+                        <div className="col-span-12">
+                            <Slider {...settings}>
+                                {slides.map((slide, idx) => (
+                                    <div key={idx} className="px-1">
+                                        <div className="space-y-3">
+                                            {slide.items.map((item, itemIdx) => (
+                                                <div
+                                                    key={itemIdx}
+                                                    className="bg-white dark:bg-slate-800 p-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-primary"
+                                                >
+                                                    <h3 className="text-lg font-bold text-primary mb-2">
+                                                        {item.year}
+                                                    </h3>
+                                                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-xs whitespace-pre-line">
+                                                        {item.description}
+                                                    </p>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </Slider>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </>
+
+                {/* Desktop Layout */}
+                <div className="hidden md:grid md:grid-cols-12 gap-12 items-start">
+                    {/* Left Side - Image (Static) */}
+                    <div className="md:col-span-4 flex justify-start sticky top-20">
+                        <div className="relative w-full max-w-sm h-auto rounded-xl overflow-hidden shadow-2xl mt-32">
+                            <Image
+                                src="/images/hero/Black_1.png"
+                                alt="Timeline"
+                                width={350}
+                                height={600}
+                                quality={100}
+                                priority
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Right Side - Timeline Slider */}
+                    <div className="md:col-span-8">
+                        <div className="mb-10">
+                            <h2 className="text-5xl font-bold text-gray-900 dark:text-white mb-2">
+                                TimeLine
+                            </h2>
+                            <p className="text-xl text-gray-600 dark:text-gray-400 font-medium">
+                                Our Company Milestones
+                            </p>
+                        </div>
+
+                        <Slider {...settings}>
+                            {slides.map((slide, idx) => (
+                                <div key={idx} className="px-2">
+                                    <div className="space-y-6">
+                                        {slide.items.map((item, itemIdx) => (
+                                            <div
+                                                key={itemIdx}
+                                                className="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-primary"
+                                            >
+                                                <h3 className="text-2xl font-bold text-primary mb-3">
+                                                    {item.year}
+                                                </h3>
+                                                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base whitespace-pre-line">
+                                                    {item.description}
+                                                </p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                        </Slider>
+                    </div>
+                </div>
+            </div>
+        </section>
     );
 };
 
