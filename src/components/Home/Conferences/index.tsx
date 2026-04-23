@@ -28,7 +28,7 @@ const Conferences = () => {
                 Temflo provides future proof display system. Offering a variety of products like immersive display, Outdoor LED display and DLP based video walls
               </p>
               <Link
-                href="/"
+                href="/blog"
                 className="btn_outline btn-2 hover-outline-slide-down"
               >
                 <span>More Projects</span>
