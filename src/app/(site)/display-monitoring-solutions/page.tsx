@@ -1,35 +1,45 @@
 import React from 'react';
 import Image from 'next/image'; 
+import { getPageUrl } from "@/lib/pageUrls";
+import Link from "next/link";
+
+
 const displayMonitoringSolutions = [
   { 
     id: 1, 
     title: 'Patna Smart City Ltd.', 
     src: '/images/hero/mug_1.png',
+    href:'/solutions/1'
   },
   { 
     id: 2, 
     title: 'Portblair Smart City Project', 
     src: '/images/hero/mug_2.png', 
+    href:'/solutions/2'
   },
   { 
     id: 3, 
     title: 'Project ICT for RRVPNL', 
     src: '/images/hero/mug_3.png', 
+    href:'/solutions/3'
   },
   { 
     id: 4, 
     title: 'Bhopal Smart City Ltd.', 
-    src: '/images/hero/mug_4.png', 
+    src: '/images/hero/mug_4.png',
+    href:'/solutions/4' 
   }, 
   { 
     id: 5, 
     title: 'Negpur Metro Rail Corporation Ltd.', 
     src: '/images/hero/mug_5.png', 
+    href:'/solutions/5'
   }, 
   { 
     id: 6, 
     title: 'Delhi Jai Board.', 
     src: '/images/hero/mug_6.png', 
+    href:'/solutions/6'
   },  
 ];
 
@@ -38,7 +48,7 @@ export default function DisplayMonitoringPage() {
     <div className="container mx-auto px-4 py-10 md:py-16">
       <div className="text-center mb-12">
         <br></br><br></br><br></br><br></br>
-        <p className="text-lg md:text-4xl font-extrabold text-gray-900">
+        <p className="text-lg md:text-4xl font-extrabold text-primary-900">
           Display & Monitoring Solutions
         </p>
         <p className="mt-5 text-xl text-gray-600 max-w-2xl mx-auto">
@@ -58,8 +68,11 @@ export default function DisplayMonitoringPage() {
                 quality={80} 
               />
             </div>
+
             <div className="p-6">
+            <Link href={solution.href}>
               <h3 className="text-2xl font-bold text-gray-800">{solution.title}</h3>
+            </Link>
             </div>
           </div>
         ))}

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PageEntry } from "@/lib/pagesData";
 import { generateBreadcrumbs } from "@/lib/pageUrls";
+import TicketSection from "@/components/Home/TicketSection";
 
 interface DynamicPageProps {
   page: PageEntry;
@@ -13,7 +14,7 @@ const DynamicPageComponent: React.FC<DynamicPageProps> = ({ page }) => {
   const breadcrumbs = generateBreadcrumbs(page);
 
   return (
-    <main className="bg-white dark:bg-darklight min-h-screen">
+    <main className="bg-white dark:bg-darklight min-h-screen pt-24">
       {/* Breadcrumb Section */}
       <section className="bg-gradient-to-r from-primary/5 to-transparent dark:from-slate-900 dark:to-transparent py-6 md:py-10 border-b border-primary/10">
         <div className="container px-4 md:px-0">
@@ -54,22 +55,20 @@ const DynamicPageComponent: React.FC<DynamicPageProps> = ({ page }) => {
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
                 {page.description}
               </p>
-              <button className="bg-gradient-to-r from-primary to-primary/80 text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 transform hover:-translate-y-1">
-                Get Started
-              </button>
+             
             </div>
 
             {/* Right - Image */}
-            <div className="md:col-span-6 col-span-12">
-              <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-2xl group">
+            <div className="md:col-span-6 col-span-12 flex justify-center md:justify-start">
+              <div className="relative w-full h-64 sm:h-72 md:h-96 rounded-2xl overflow-hidden shadow-2xl group">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
                 <Image
                   src={page.image}
                   alt={page.title}
                   fill
                   quality={100}
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 768px) calc(100vw - 2rem), 50vw"
                 />
                 {/* Decorative border */}
                 <div className="absolute inset-0 rounded-2xl border-2 border-primary/20 pointer-events-none"></div>
@@ -125,24 +124,7 @@ const DynamicPageComponent: React.FC<DynamicPageProps> = ({ page }) => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-12 md:py-24 bg-gradient-to-r from-primary via-primary to-primary/80 text-white relative overflow-hidden">
-        {/* Decorative background elements */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-72 h-72 bg-white/5 rounded-full blur-3xl"></div>
-        
-        <div className="container px-4 md:px-0 text-center relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Get Started?
-          </h2>
-          <p className="text-lg text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Discover how {page.title} can transform your operations and unlock new possibilities.
-          </p>
-          <button className="bg-white text-primary px-10 py-4 rounded-lg font-semibold hover:bg-primary/10 hover:text-white transition-all duration-300 transform hover:-translate-y-1 border-2 border-white/20">
-            Contact Us Today
-          </button>
-        </div>
-      </section>
+    <TicketSection />
     </main>
   );
 };

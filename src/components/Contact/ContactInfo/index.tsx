@@ -53,7 +53,6 @@ const ContactInfo = () => {
                                       Be a part of our team and help us shape the future of technology.
                                     </p>
                                 </div>
-                                <br></br>
                                 <div>
                                     <Link href="/joinus" className="text-primary text-lg font-medium flex items-center gap-3 group hover:text-secondary dark:hover:text-white">
                                         Send an application
@@ -78,10 +77,21 @@ const ContactInfo = () => {
                         <span className="text-primary dark:text-white text-4xl font-bold">
                             Find Us Here
                         </span>
-                        <br></br><br></br>
+                        <div className="h-8"></div>
                        
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14003.977913030392!2d77.327967!3d28.659884000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbb54c1b8acf%3A0x917be596ae342a31!2sTemflo%20Systems%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1776749860051!5m2!1sen!2sin" width="800" height="600" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <div className="w-full max-w-4xl">
+                          <div style={{ position: 'relative', paddingBottom: '66.66%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>
+                            <iframe 
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.9643095779616!2d77.3300694!3d28.6607873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbb54c1b8acf%3A0x917be596ae342a31!2sTemflo%20Systems%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1777279249357!5m2!1sen!2sin" 
+                              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }} 
+                              loading="lazy" 
+                              allowFullScreen
+                              referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                          </div>
+                        </div>
                     </div>
+
                 </div>
                 <div className="border-b border-solid  dark:border-dark_border"></div>
             </section>

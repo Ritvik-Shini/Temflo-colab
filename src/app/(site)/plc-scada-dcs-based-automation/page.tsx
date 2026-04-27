@@ -1,35 +1,45 @@
 import React from 'react';
 import Image from 'next/image'; 
+import { getPageUrl } from "@/lib/pageUrls";
+import Link from "next/link";
 const plcscadadcsbasedautomation = [
   { 
-    id: 1, 
+    id: 49, 
     title: 'Patna Smart City Ltd.', 
     src: '/images/hero/mug_1.png',
+    href:'/solutions/49'
   },
   { 
-    id: 2, 
+    id: 50, 
     title: 'Portblair Smart City Project', 
     src: '/images/hero/mug_2.png', 
+    href:'/solutions/50'
+
   },
   { 
-    id: 3, 
+    id: 51, 
     title: 'Project ICT for RRVPNL', 
     src: '/images/hero/mug_3.png', 
+    href:'/solutions/51'
   },
   { 
-    id: 4, 
+    id: 52, 
     title: 'Bhopal Smart City Ltd.', 
     src: '/images/hero/mug_4.png', 
+    href:'/solutions/52'
   }, 
   { 
-    id: 5, 
+    id: 53, 
     title: 'Negpur Metro Rail Corporation Ltd.', 
-    src: '/images/hero/mug_5.png', 
+    src: '/images/hero/mug_5.png',  
+    href:'/solutions/53'
+
   }, 
   { 
-    id: 6, 
+    id: 54, 
     title: 'Delhi Jai Board.', 
     src: '/images/hero/mug_6.png', 
+    href:'/solutions/54'
   },  
 ];
 
@@ -38,7 +48,7 @@ export default function PlcscadadcsbasedautomationPage() {
     <div className="container mx-auto px-4 py-10 md:py-16">
       <div className="text-center mb-12">
         <br></br><br></br><br></br><br></br>
-        <p className="text-lg md:text-4xl font-extrabold text-gray-900">
+        <p className="text-lg md:text-4xl font-extrabold text-primary-gray-900">
           Plc SCADA DCS Based Automation
         </p>
         <p className="mt-5 text-xl text-gray-600 max-w-2xl mx-auto">
@@ -59,7 +69,9 @@ export default function PlcscadadcsbasedautomationPage() {
               />
             </div>
             <div className="p-6">
+              <Link href={solution.href}>
               <h3 className="text-2xl font-bold text-gray-800">{solution.title}</h3>
+            </Link>
             </div>
           </div>
         ))}
