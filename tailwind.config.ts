@@ -82,7 +82,7 @@ const config: Config = {
       colors: {
         primary: "#883FFC",
         secondary: "#102C46",
-        SereneSky: "#cb88d1",
+        SereneSky: "#c881ce",
         ElectricAqua: "#0a130e",
         RegalBlue: "#13439B",
         LightYellow: "#FFE15A",

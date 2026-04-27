@@ -84,7 +84,7 @@ export default async function BlogHead({ params }: Props) {
                                 </span>
                                 <span className="text-base text-SlateBlueText sm:pl-7 pl-0 w-fit">13 Comments</span>
                             </div>
-                            <h2 className="text-SlateBlueText pt-7 text-[25px] leading-[3.4rem] font-bold">
+                            <h2 className="text-SlateBlueText pt-7 text-[40px] leading-[3.4rem] font-bold">
                                 {post.title}
                             </h2>
                         </div>

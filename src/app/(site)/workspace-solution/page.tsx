@@ -1,35 +1,43 @@
 import React from 'react';
 import Image from 'next/image'; 
+import { getPageUrl } from "@/lib/pageUrls";
+import Link from "next/link";
 const workspacesolution = [
   { 
-    id: 1, 
+    id: 31, 
     title: 'Patna Smart City Ltd.', 
     src: '/images/hero/mug_1.png',
+    href:'/solutions/31'
   },
   { 
-    id: 2, 
+    id: 32, 
     title: 'Portblair Smart City Project', 
     src: '/images/hero/mug_2.png', 
+    href:'/solutions/32'
   },
   { 
     id: 3, 
     title: 'Project ICT for RRVPNL', 
     src: '/images/hero/mug_3.png', 
+    href:'/solutions/33'
   },
   { 
-    id: 4, 
+    id: 34, 
     title: 'Bhopal Smart City Ltd.', 
     src: '/images/hero/mug_4.png', 
+    href:'/solutions/34'
   }, 
   { 
-    id: 5, 
+    id: 35, 
     title: 'Negpur Metro Rail Corporation Ltd.', 
     src: '/images/hero/mug_5.png', 
+    href:'/solutions/35'
   }, 
   { 
-    id: 6, 
+    id: 36, 
     title: 'Delhi Jai Board.', 
     src: '/images/hero/mug_6.png', 
+    href:'/solutions/36'
   },  
 ];
 
@@ -38,7 +46,7 @@ export default function WorkspacesolutionPage() {
     <div className="container mx-auto px-4 py-10 md:py-16">
       <div className="text-center mb-12">
         <br></br><br></br><br></br><br></br>
-        <p className="text-lg md:text-4xl font-extrabold text-gray-900">
+        <p className="text-lg md:text-4xl font-extrabold text-primary-gray-900">
           Workspace Solution
         </p>
         <p className="mt-5 text-xl text-gray-600 max-w-2xl mx-auto">
@@ -59,7 +67,9 @@ export default function WorkspacesolutionPage() {
               />
             </div>
             <div className="p-6">
+              <Link href={solution.href}>
               <h3 className="text-2xl font-bold text-gray-800">{solution.title}</h3>
+            </Link>
             </div>
           </div>
         ))}

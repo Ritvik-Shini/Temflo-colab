@@ -1,35 +1,43 @@
 import React from 'react';
 import Image from 'next/image'; 
+import { getPageUrl } from "@/lib/pageUrls";
+import Link from "next/link";
 const energyportfoliomanagement = [
   { 
-    id: 1, 
+    id: 37, 
     title: 'Patna Smart City Ltd.', 
     src: '/images/hero/mug_1.png',
+    href:'/solutions/37'
   },
   { 
-    id: 2, 
+    id: 38, 
     title: 'Portblair Smart City Project', 
-    src: '/images/hero/mug_2.png', 
+    src: '/images/hero/mug_2.png',
+    href:'/solutions/38'
   },
   { 
-    id: 3, 
+    id: 39, 
     title: 'Project ICT for RRVPNL', 
-    src: '/images/hero/mug_3.png', 
+    src: '/images/hero/mug_3.png',
+    href:'/solutions/39' 
   },
   { 
-    id: 4, 
+    id: 40, 
     title: 'Bhopal Smart City Ltd.', 
-    src: '/images/hero/mug_4.png', 
+    src: '/images/hero/mug_4.png',
+    href:'/solutions/40' 
   }, 
   { 
-    id: 5, 
+    id: 41, 
     title: 'Negpur Metro Rail Corporation Ltd.', 
     src: '/images/hero/mug_5.png', 
+    href:'/solutions/41'
   }, 
   { 
-    id: 6, 
+    id: 42, 
     title: 'Delhi Jai Board.', 
     src: '/images/hero/mug_6.png', 
+    href:'/solutions/42'
   },  
 ];
 
@@ -38,7 +46,7 @@ export default function EnergyportfoliomanagementPage() {
     <div className="container mx-auto px-4 py-10 md:py-16">
       <div className="text-center mb-12">
         <br></br><br></br><br></br><br></br>
-        <p className="text-lg md:text-4xl font-extrabold text-gray-900">
+        <p className="text-lg md:text-4xl font-extrabold text-primary-gray-900">
           Energy Portfolio Management
         </p>
         <p className="mt-5 text-xl text-gray-600 max-w-2xl mx-auto">
@@ -59,7 +67,9 @@ export default function EnergyportfoliomanagementPage() {
               />
             </div>
             <div className="p-6">
+             <Link href={solution.href}>
               <h3 className="text-2xl font-bold text-gray-800">{solution.title}</h3>
+            </Link>
             </div>
           </div>
         ))}
