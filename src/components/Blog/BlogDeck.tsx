@@ -89,7 +89,7 @@ const BlogDeck: React.FC<BlogDeckProps> = ({ posts }) => {
                         <div className="absolute -left-10 top-12 hidden h-[420px] w-72 rounded-[35px] bg-primary/10 shadow-2xl blur-3xl md:block" />
                         <div className="absolute right-0 top-16 hidden h-[380px] w-72 rounded-[35px] bg-slate-200/50 shadow-2xl blur-3xl md:block" />
 
-                        <div className="relative min-h-[720px] overflow-hidden rounded-[32px] border border-slate-200 bg-gradient-to-br from-white to-slate-100 shadow-[0_40px_90px_rgba(15,23,42,0.08)] dark:border-slate-700 dark:bg-slate-950">
+                        <div className="relative min-h-[720px] overflow-hidden rounded-[32px]">
                             <div
                                 className="relative h-full w-full transition-transform ease-[cubic-bezier(0.22,1,0.36,1)]"
                                 style={{
@@ -131,7 +131,7 @@ const BlogDeck: React.FC<BlogDeckProps> = ({ posts }) => {
                                             : 'border-slate-200 bg-slate-50 hover:border-primary/70 hover:bg-primary/5 dark:border-slate-700 dark:bg-slate-900 dark:hover:border-primary/50'
                                     }`}
                                 >
-                                    <div className="relative h-20 w-20 overflow-hidden rounded-2xl bg-slate-100 dark:bg-slate-900">
+                                    <div className="relative h-20 w-20 overflow-hidden rounded-2xl bg-slate-100 dark:bg-slate-900 flex-shrink-0">
                                         <img
                                             src={blog.coverImage || '/images/hero/Black_1.png'}
                                             alt={blog.title}

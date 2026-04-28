@@ -10,21 +10,21 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
     const galleryHref = pageId ? `/solutions/${pageId}#gallery` : `/blog/${slug}#gallery`;
 
     return (
-        <article className="group overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_30px_60px_rgba(15,23,42,0.08)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_45px_120px_rgba(15,23,42,0.18)] hover:border-primary/40 dark:border-slate-700 dark:bg-slate-950">
-            <div className="relative overflow-hidden rounded-t-[28px]">
-                <Link href={`/blog/${slug}`} aria-label="Open blog page" className="block">
+        <article className="group overflow-hidden rounded-[28px] transition-all duration-500 ease-out flex flex-col">
+            <div className="relative overflow-hidden rounded-t-[28px] bg-slate-200 dark:bg-slate-800">
+                <Link href={`/blog/${slug}`} aria-label="Open blog page" className="block w-full">
                     <Image
                         src={coverImage || '/images/hero/Black_1.png'}
                         alt={title || "blog image"}
-                        className="h-72 w-full object-cover transition duration-500 group-hover:scale-105"
-                        width={408}
-                        height={272}
+                        width={720}
+                        height={420}
                         quality={100}
+                        className="h-72 sm:h-80 md:h-96 w-full object-cover transition duration-500 group-hover:scale-105"
                     />
                 </Link>
             </div>
 
-            <div className="p-6 sm:p-7">
+            <div className="p-6 sm:p-7 bg-white dark:bg-slate-950 rounded-b-[28px]">
                 <p className="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-primary/90">
                     Featured insight
                 </p>
