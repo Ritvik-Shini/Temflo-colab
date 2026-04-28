@@ -1,23 +1,18 @@
 import React from 'react';
-import BlogCard from '@/components/SharedComponent/Blog/blogCard';
+import BlogDeck from '@/components/Blog/BlogDeck';
 import { getAllPosts } from "@/utils/markdown";
 
-const BlogList: React.FC = () => {
-    const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
+export default function BlogList() {
+    try {
+        const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug", "pageId"]);
+        
+        if (!posts || posts.length === 0) {
+            return null;
+        }
 
-    return (
-        <section className="flex flex-wrap justify-center pt-8 dark:bg-darkmode pb-0" id="blog">
-            <div className="container mx-auto">
-                <div className="grid grid-cols-12 gap-7">
-                    {posts.map((blog, i) => (
-                        <div key={i} className="w-full lg:col-span-4 md:col-span-6 col-span-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <BlogCard blog={blog} />
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
-    );
+        return <BlogDeck posts={posts} />;
+    } catch (error) {
+        console.error('Error loading blog posts:', error);
+        return null;
+    }
 }
-
-export default BlogList;

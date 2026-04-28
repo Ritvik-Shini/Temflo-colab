@@ -9,6 +9,13 @@ export interface PageEntry {
   icon?: string;
   category: string;
   features: string[];
+  galleryImages?: string[];
+  videoLink?: string;
+  location?: {
+    name: string;
+    coordinates: string;
+    mapsUrl: string;
+  };
   createdAt: string;
 }
 
@@ -30,6 +37,19 @@ export const pagesData: PageEntry[] = [
       "Data analytics dashboard",
       "IoT sensor networks"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-15"
   },
   {
@@ -48,6 +68,18 @@ export const pagesData: PageEntry[] = [
       "Incident tracking",
       "Resource allocation"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg"
+    ],
+    videoLink: "https://www.youtube.com/embed/jNQXAC9IVRw",
+    location: {
+      name: "Port Blair, Andaman",
+      coordinates: "11.7401° N, 92.7673° E",
+      mapsUrl: "https://maps.google.com/?q=Port+Blair,Andaman"
+    },
     createdAt: "2024-01-20"
   },
   {
@@ -66,6 +98,19 @@ export const pagesData: PageEntry[] = [
       "Smart grid technology",
       "Cost optimization"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/9bZkp7q19f0",
+    location: {
+      name: "Jaipur, Rajasthan",
+      coordinates: "26.9124° N, 75.7873° E",
+      mapsUrl: "https://maps.google.com/?q=Jaipur,Rajasthan"
+    },
     createdAt: "2024-01-25"
   },
   {
@@ -84,6 +129,18 @@ export const pagesData: PageEntry[] = [
       "Intelligent alerts",
       "Archive management"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg"
+    ],
+    videoLink: "https://www.youtube.com/embed/2Xc9gXyqjpE",
+    location: {
+      name: "Bhopal, Madhya Pradesh",
+      coordinates: "23.1815° N, 79.9864° E",
+      mapsUrl: "https://maps.google.com/?q=Bhopal,MadhyaPradesh"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -102,8 +159,21 @@ export const pagesData: PageEntry[] = [
       "Intelligent alerts",
       "Archive management"
     ],
-    createdAt: "2024-02-01"
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/kffacxfA7g4",
+    location: {
+      name: "Nagpur, Maharashtra",
+      coordinates: "21.1458° N, 79.0882° E",
+      mapsUrl: "https://maps.google.com/?q=Nagpur,Maharashtra"
     },
+    createdAt: "2024-02-01"
+  },
     {
     id: "6",
     slug: "Delhi Jai Board",
@@ -121,6 +191,18 @@ export const pagesData: PageEntry[] = [
       "Archive management"
     
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg"
+    ],
+    videoLink: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    location: {
+      name: "Delhi",
+      coordinates: "28.6139° N, 77.2090° E",
+      mapsUrl: "https://maps.google.com/?q=Delhi"
+    },
     createdAt: "2024-02-01"
   },
    {
@@ -140,12 +222,37 @@ export const pagesData: PageEntry[] = [
       "Archive management"
     
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {
     id: "8",
     slug: "Portblair Smart City Project.",
     title: "Portblair Smart City Project.",
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg"
+    ],
+    videoLink: "https://www.youtube.com/embed/jNQXAC9IVRw",
+    location: {
+      name: "Port Blair, Andaman",
+      coordinates: "11.7401° N, 92.7673° E",
+      mapsUrl: "https://maps.google.com/?q=Port+Blair,Andaman"
+    },
     description: "Port Blair Smart City Limited is a project focused on transforming Port Blair into a modern, sustainable, and citizen-friendly smart city through advanced infrastructure and digital solutions.",
     fullDescription: "CCTV and monitoring systems with AI-powered analytics for enhanced public safety and security management.",
     image: "/images/hero/Black_1.png",
@@ -166,6 +273,19 @@ export const pagesData: PageEntry[] = [
     slug: "Project ICT for RRVPNL.",
     title: "Project ICT for RRVPNL.",
     description: "Rajasthan Rajya Vidyut Prasaran Nigam Limited ICT project focuses on modernizing power transmission operations through digital systems, real-time monitoring, and efficient data management.",
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/9bZkp7q19f0",
+    location: {
+      name: "Jaipur, Rajasthan",
+      coordinates: "26.9124° N, 75.7873° E",
+      mapsUrl: "https://maps.google.com/?q=Jaipur,Rajasthan"
+    },
     fullDescription: "CCTV and monitoring systems with AI-powered analytics for enhanced public safety and security management.",
     image: "/images/hero/Black_1.png",
     icon: "🎥",
@@ -197,6 +317,18 @@ export const pagesData: PageEntry[] = [
       "Archive management"
     
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg"
+    ],
+    videoLink: "https://www.youtube.com/embed/2Xc9gXyqjpE",
+    location: {
+      name: "Bhopal, Madhya Pradesh",
+      coordinates: "23.1815° N, 79.9864° E",
+      mapsUrl: "https://maps.google.com/?q=Bhopal,MadhyaPradesh"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -216,12 +348,37 @@ export const pagesData: PageEntry[] = [
       "Archive management"
     
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/kffacxfA7g4",
+    location: {
+      name: "Nagpur, Maharashtra",
+      coordinates: "21.1458° N, 79.0882° E",
+      mapsUrl: "https://maps.google.com/?q=Nagpur,Maharashtra"
+    },
     createdAt: "2024-02-01"
   },
   {
     id: "12",
     slug: "Delhi Jai Board.",
     title: "Delhi Jai Board.",
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg"
+    ],
+    videoLink: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    location: {
+      name: "Delhi",
+      coordinates: "28.6139° N, 77.2090° E",
+      mapsUrl: "https://maps.google.com/?q=Delhi"
+    },
     description: "Rajasthan Rajya Vidyut Prasaran Nigam Limited ICT project focuses on modernizing power transmission operations through digital systems, real-time monitoring, and efficient data management.",
     fullDescription: "CCTV and monitoring systems with AI-powered analytics for enhanced public safety and security management.",
     image: "/images/hero/Black_1.png",
@@ -253,6 +410,19 @@ export const pagesData: PageEntry[] = [
       "Data analytics dashboard",
       "IoT sensor networks"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-15"
   },
   {
@@ -271,6 +441,18 @@ export const pagesData: PageEntry[] = [
       "Incident tracking",
       "Resource allocation"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg"
+    ],
+    videoLink: "https://www.youtube.com/embed/jNQXAC9IVRw",
+    location: {
+      name: "Port Blair, Andaman",
+      coordinates: "11.7401° N, 92.7673° E",
+      mapsUrl: "https://maps.google.com/?q=Port+Blair,Andaman"
+    },
     createdAt: "2024-01-20"
   },
   {
@@ -289,6 +471,20 @@ export const pagesData: PageEntry[] = [
       "Smart grid technology",
       "Cost optimization"
     ],
+     galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
+      
     createdAt: "2024-01-25"
   },
   {
@@ -308,6 +504,19 @@ export const pagesData: PageEntry[] = [
       "Archive management"
     
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -327,6 +536,19 @@ export const pagesData: PageEntry[] = [
       "Archive management"
     
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -346,6 +568,19 @@ export const pagesData: PageEntry[] = [
       "Archive management"
     
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -364,6 +599,19 @@ export const pagesData: PageEntry[] = [
       "Data analytics dashboard",
       "IoT sensor networks"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-15"
   },
   {
@@ -382,6 +630,19 @@ export const pagesData: PageEntry[] = [
       "Incident tracking",
       "Resource allocation"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-20"
   },
    {
@@ -400,6 +661,19 @@ export const pagesData: PageEntry[] = [
       "Smart grid technology",
       "Cost optimization"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-25"
   },
   {
@@ -419,6 +693,19 @@ export const pagesData: PageEntry[] = [
       "Archive management"
     
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -438,6 +725,19 @@ export const pagesData: PageEntry[] = [
       "Archive management"
     
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -457,6 +757,19 @@ export const pagesData: PageEntry[] = [
       "Archive management"
     
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -475,6 +788,19 @@ export const pagesData: PageEntry[] = [
       "Data analytics dashboard",
       "IoT sensor networks"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-15"
   },
   {
@@ -493,6 +819,19 @@ export const pagesData: PageEntry[] = [
       "Incident tracking",
       "Resource allocation"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-20"
   },
   {
@@ -511,6 +850,19 @@ export const pagesData: PageEntry[] = [
       "Smart grid technology",
       "Cost optimization"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-25"
   },
   {
@@ -529,6 +881,19 @@ export const pagesData: PageEntry[] = [
       "Intelligent alerts",
       "Archive management"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -547,6 +912,19 @@ export const pagesData: PageEntry[] = [
       "Intelligent alerts",
       "Archive management"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
     },
     {
@@ -566,6 +944,19 @@ export const pagesData: PageEntry[] = [
       "Archive management"
     
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -584,6 +975,19 @@ export const pagesData: PageEntry[] = [
       "Data analytics dashboard",
       "IoT sensor networks"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-15"
   },
    {
@@ -602,6 +1006,19 @@ export const pagesData: PageEntry[] = [
       "Incident tracking",
       "Resource allocation"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-20"
   },
   {
@@ -620,6 +1037,19 @@ export const pagesData: PageEntry[] = [
       "Smart grid technology",
       "Cost optimization"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-25"
   },
   {
@@ -638,6 +1068,19 @@ export const pagesData: PageEntry[] = [
       "Intelligent alerts",
       "Archive management"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -656,6 +1099,19 @@ export const pagesData: PageEntry[] = [
       "Intelligent alerts",
       "Archive management"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
     },
     {
@@ -675,6 +1131,19 @@ export const pagesData: PageEntry[] = [
       "Archive management"
     
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -693,6 +1162,19 @@ export const pagesData: PageEntry[] = [
       "Data analytics dashboard",
       "IoT sensor networks"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-15"
   },
   {
@@ -711,6 +1193,19 @@ export const pagesData: PageEntry[] = [
       "Incident tracking",
       "Resource allocation"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-20"
   },
   {
@@ -729,6 +1224,19 @@ export const pagesData: PageEntry[] = [
       "Smart grid technology",
       "Cost optimization"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-25"
   },
   {
@@ -747,6 +1255,19 @@ export const pagesData: PageEntry[] = [
       "Intelligent alerts",
       "Archive management"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -765,6 +1286,19 @@ export const pagesData: PageEntry[] = [
       "Intelligent alerts",
       "Archive management"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
     },
     {
@@ -784,6 +1318,19 @@ export const pagesData: PageEntry[] = [
       "Archive management"
     
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {    
@@ -802,6 +1349,19 @@ export const pagesData: PageEntry[] = [
       "Data analytics dashboard",
       "IoT sensor networks"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-15"
   },
   {
@@ -820,6 +1380,19 @@ export const pagesData: PageEntry[] = [
       "Incident tracking",
       "Resource allocation"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-20"
   },
   {
@@ -838,6 +1411,19 @@ export const pagesData: PageEntry[] = [
       "Smart grid technology",
       "Cost optimization"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-25"
   },
   {
@@ -856,6 +1442,19 @@ export const pagesData: PageEntry[] = [
       "Intelligent alerts",
       "Archive management"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -874,6 +1473,19 @@ export const pagesData: PageEntry[] = [
       "Intelligent alerts",
       "Archive management"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
     },
     {
@@ -893,6 +1505,19 @@ export const pagesData: PageEntry[] = [
       "Archive management"
     
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -911,6 +1536,19 @@ export const pagesData: PageEntry[] = [
       "Data analytics dashboard",
       "IoT sensor networks"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-15"
   },
   {
@@ -929,6 +1567,19 @@ export const pagesData: PageEntry[] = [
       "Incident tracking",
       "Resource allocation"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-20"
   },
   {
@@ -947,6 +1598,19 @@ export const pagesData: PageEntry[] = [
       "Smart grid technology",
       "Cost optimization"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-25"
   },
   {
@@ -965,6 +1629,19 @@ export const pagesData: PageEntry[] = [
       "Intelligent alerts",
       "Archive management"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
    {
@@ -983,6 +1660,19 @@ export const pagesData: PageEntry[] = [
       "Intelligent alerts",
       "Archive management"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
     },
     {
@@ -1002,6 +1692,19 @@ export const pagesData: PageEntry[] = [
       "Archive management"
     
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -1020,6 +1723,19 @@ export const pagesData: PageEntry[] = [
       "Data analytics dashboard",
       "IoT sensor networks"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-15"
   },
   {
@@ -1038,6 +1754,19 @@ export const pagesData: PageEntry[] = [
       "Incident tracking",
       "Resource allocation"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-20"
   },
   {
@@ -1056,6 +1785,19 @@ export const pagesData: PageEntry[] = [
       "Smart grid technology",
       "Cost optimization"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-01-25"
   },
   {
@@ -1074,6 +1816,19 @@ export const pagesData: PageEntry[] = [
       "Intelligent alerts",
       "Archive management"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
   {
@@ -1092,6 +1847,19 @@ export const pagesData: PageEntry[] = [
       "Intelligent alerts",
       "Archive management"
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
     },
     {
@@ -1111,6 +1879,19 @@ export const pagesData: PageEntry[] = [
       "Archive management"
     
     ],
+    galleryImages: [
+      "/images/hero/Black_1.png",
+      "/images/ThumbnailSlider/water_1.png",
+      "/images/ThumbnailSlider/water_2.jpg",
+      "/images/ThumbnailSlider/water_3.jpg",
+      "/images/ThumbnailSlider/water_4.png"
+    ],
+    videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    location: {
+      name: "Patna, Bihar",
+      coordinates: "25.5941° N, 85.1376° E",
+      mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
+    },
     createdAt: "2024-02-01"
   },
 

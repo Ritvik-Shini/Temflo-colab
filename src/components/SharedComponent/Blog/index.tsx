@@ -5,7 +5,7 @@ import BlogCard from './blogCard';
 import { getAllPosts } from "@/utils/markdown";
 
 const Blog: React.FC = () => {
-    const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]).slice(0, 3);
+    const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug", "pageId"]).slice(0, 3);
 
     return (
         <section className="flex flex-wrap justify-center py-24 dark:bg-darklight border-t border-border dark:border-dark_border " id="blog">
@@ -23,12 +23,20 @@ const Blog: React.FC = () => {
                         </span>
                     </Link>
                 </div>
-                <div className="grid grid-cols-12 gap-7">
-                    {posts.map((blog, i) => (
-                        <div key={i} className="w-full md:col-span-4 col-span-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <BlogCard blog={blog} />
-                        </div>
-                    ))}
+                <div className="overflow-x-auto pb-6 -mx-4 px-4 lg:-mx-0 lg:px-0">
+                    <div className="flex gap-6 snap-x snap-mandatory scroll-smooth touch-pan-x">
+                        {posts.map((blog, i) => (
+                            <div
+                                key={i}
+                                className="min-w-[280px] sm:min-w-[320px] md:min-w-[360px] lg:min-w-[420px] snap-start"
+                                data-aos="fade-up"
+                                data-aos-delay="200"
+                                data-aos-duration="1000"
+                            >
+                                <BlogCard blog={blog} />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
