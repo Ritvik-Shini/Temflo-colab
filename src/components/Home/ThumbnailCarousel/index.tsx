@@ -88,9 +88,9 @@ const ThumbnailCarousel: React.FC = () => {
 
     return (
         <>
-            <div>
-                <Slider {...settingsFor} ref={mainSliderRef} className="pb-3">
-                    <div>
+            <div className="min-h-[320px] sm:min-h-[400px] md:min-h-[500px] flex flex-col">
+                <Slider {...settingsFor} ref={mainSliderRef} className="pb-2 flex-1">
+                    <div className="h-full">
                         <Image
                             src="/images/ThumbnailSlider/water_1.png"
                             alt="Conference"
@@ -102,7 +102,7 @@ const ThumbnailCarousel: React.FC = () => {
                             className="rounded-lg"
                         />
                     </div>
-                    <div>
+                    <div className="h-full">
                         <Image
                             src="/images/ThumbnailSlider/water_2.jpg"
                             alt="Conference"
@@ -114,7 +114,7 @@ const ThumbnailCarousel: React.FC = () => {
                             className="rounded-lg"
                         />
                     </div>
-                    <div>
+                    <div className="h-full">
                         <Image
                             src="/images/ThumbnailSlider/water_3.jpg"
                             alt="Conference"
@@ -126,7 +126,7 @@ const ThumbnailCarousel: React.FC = () => {
                             className="rounded-lg"
                         />
                     </div>
-                    <div>
+                    <div className="h-full">
                         <Image
                             src="/images/ThumbnailSlider/water_4.png"
                             alt="Conference"
@@ -139,56 +139,58 @@ const ThumbnailCarousel: React.FC = () => {
                         />
                     </div>
                 </Slider>
-                <Slider {...settingsNav} ref={navSliderRef} className="thumb">
-                    <div>
-                        <Image
-                            src="/images/ThumbnailSlider/water_1.png"
-                            alt="Thumbnail"
-                            width={0}
-                            height={0}
-                            quality={100}
-                            layout="responsive"
-                            sizes="100vh"
-                            className="rounded-lg"
-                        />
-                    </div>
-                    <div>
-                        <Image
-                            src="/images/ThumbnailSlider/water_2.jpg"
-                            alt="Thumbnail"
-                            width={0}
-                            height={0}
-                            quality={100}
-                            layout="responsive"
-                            sizes="100vh"
-                            className="rounded-lg"
-                        />
-                    </div>
-                    <div>
-                        <Image
-                            src="/images/ThumbnailSlider/water_3.jpg"
-                            alt="Thumbnail"
-                            width={0}
-                            height={0}
-                            quality={100}
-                            layout="responsive"
-                            sizes="100vh"
-                            className="rounded-lg"
-                        />
-                    </div>
-                    <div>
-                        <Image
-                            src="/images/ThumbnailSlider/water_4.png"
-                            alt="Thumbnail"
-                            width={0}
-                            height={0}
-                            quality={100}
-                            layout="responsive"
-                            sizes="100vh"
-                            className="rounded-lg"
-                        />
-                    </div>
-                </Slider>
+                <div className="mt-2 sm:mt-3">
+                    <Slider {...settingsNav} ref={navSliderRef} className="thumb">
+                        <div className="px-1 sm:px-2">
+                            <Image
+                                src="/images/ThumbnailSlider/water_1.png"
+                                alt="Thumbnail"
+                                width={0}
+                                height={0}
+                                quality={100}
+                                layout="responsive"
+                                sizes="100vh"
+                                className="rounded-lg h-16 sm:h-20 md:h-24 object-cover"
+                            />
+                        </div>
+                        <div className="px-1 sm:px-2">
+                            <Image
+                                src="/images/ThumbnailSlider/water_2.jpg"
+                                alt="Thumbnail"
+                                width={0}
+                                height={0}
+                                quality={100}
+                                layout="responsive"
+                                sizes="100vh"
+                                className="rounded-lg h-16 sm:h-20 md:h-24 object-cover"
+                            />
+                        </div>
+                        <div className="px-1 sm:px-2">
+                            <Image
+                                src="/images/ThumbnailSlider/water_3.jpg"
+                                alt="Thumbnail"
+                                width={0}
+                                height={0}
+                                quality={100}
+                                layout="responsive"
+                                sizes="100vh"
+                                className="rounded-lg h-16 sm:h-20 md:h-24 object-cover"
+                            />
+                        </div>
+                        <div className="px-1 sm:px-2">
+                            <Image
+                                src="/images/ThumbnailSlider/water_4.png"
+                                alt="Thumbnail"
+                                width={0}
+                                height={0}
+                                quality={100}
+                                layout="responsive"
+                                sizes="100vh"
+                                className="rounded-lg h-16 sm:h-20 md:h-24 object-cover"
+                            />
+                        </div>
+                    </Slider>
+                </div>
             </div>
         </>
     );
