@@ -4,6 +4,7 @@ import markdownToHtml from "@/utils/markdownToHtml";
 import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
+import { getPageHrefById } from "@/lib/pageIdLinks";
 
 export async function generateStaticParams() {
     const slugs = getPostSlugs();
@@ -79,8 +80,10 @@ export default async function Post({ params }: any) {
         "content",
         "coverImage",
         "date",
+        "pageId",
     ]);
 
+    const pageHref = post.pageId ? getPageHrefById(Number(post.pageId)) : undefined;
     const content = await markdownToHtml(post.content || "");
 
     return (
@@ -98,7 +101,13 @@ export default async function Post({ params }: any) {
                                 </span>
                             </div>
                             <h2 className="text-midnight_text dark:text-white pt-7">
-                                {post.title}
+                                {pageHref ? (
+                                    <Link href={pageHref} className="hover:underline">
+                                        {post.title}
+                                    </Link>
+                                ) : (
+                                    <>{post.title}</>
+                                )}
                             </h2>
                         </div>
                        
@@ -110,14 +119,27 @@ export default async function Post({ params }: any) {
                     <div className=" flex flex-wrap justify-center">
                         <div className="w-full px-4">
                             <div className="z-20 mb-16 overflow-hidden rounded">
-                                <Image
-                                    src={post.coverImage}
-                                    alt="image"
-                                    width={1170}
-                                    height={766}
-                                    quality={100}
-                                    className="h-full w-full object-cover object-center rounded-3xl"
-                                />
+                                {pageHref ? (
+                                    <Link href={pageHref} className="block">
+                                        <Image
+                                            src={post.coverImage}
+                                            alt={post.title || "image"}
+                                            width={1170}
+                                            height={766}
+                                            quality={100}
+                                            className="h-full w-full object-cover object-center rounded-3xl"
+                                        />
+                                    </Link>
+                                ) : (
+                                    <Image
+                                        src={post.coverImage}
+                                        alt={post.title || "image"}
+                                        width={1170}
+                                        height={766}
+                                        quality={100}
+                                        className="h-full w-full object-cover object-center rounded-3xl"
+                                    />
+                                )}
                             </div>
                             <div className="-mx-4 flex flex-wrap">
                                 <div className="w-full px-4 lg:w-8/12">

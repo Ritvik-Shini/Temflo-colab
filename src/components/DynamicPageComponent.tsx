@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { PageEntry } from "@/lib/pagesData";
@@ -12,6 +12,7 @@ interface DynamicPageProps {
 
 const DynamicPageComponent: React.FC<DynamicPageProps> = ({ page }) => {
   const breadcrumbs = generateBreadcrumbs(page);
+  const [activeGalleryIndex, setActiveGalleryIndex] = useState(0);
 
   return (
     <main className="bg-white dark:bg-darklight min-h-screen pt-24">
@@ -93,36 +94,140 @@ const DynamicPageComponent: React.FC<DynamicPageProps> = ({ page }) => {
       </section>
 
       {/* Features Section */}
-      <section className="bg-gradient-to-b from-gray-50 to-white dark:from-slate-800 dark:to-slate-900 py-12 md:py-24 relative">
-        {/* Decorative background */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
-        
-        <div className="container px-4 md:px-0 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 to-primary dark:from-white dark:to-primary bg-clip-text text-transparent mb-4">
-              Key Features
-            </h2>
-            <div className="w-16 h-1 bg-gradient-to-r from-primary/50 to-primary mx-auto rounded-full"></div>
+     
+
+      {/* Gallery Section */}
+      {page.galleryImages && page.galleryImages.length > 0 && (
+        <section id="gallery" className="scroll-mt-24 py-12 md:py-24 bg-white dark:bg-darklight">
+          <div className="container px-4 md:px-0">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                Gallery
+              </h2>
+              <div className="w-16 h-1 bg-gradient-to-r from-primary/50 to-primary mx-auto rounded-full"></div>
+            </div>
+
+            {/* Main Image */}
+            <div className="mb-6">
+              <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl group bg-slate-100 dark:bg-slate-800">
+                <Image
+                  src={page.galleryImages[activeGalleryIndex]}
+                  alt={`Gallery ${activeGalleryIndex + 1}`}
+                  fill
+                  quality={100}
+                  className="object-contain object-center transition-all duration-500"
+                  sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 768px) calc(100vw - 2rem), (max-width: 1024px) calc(100vw - 2rem), 100vw"
+                />
+                <div className="absolute inset-0 rounded-2xl border-2 border-primary/20 pointer-events-none"></div>
+              </div>
+            </div>
+
+            {/* Thumbnail Gallery */}
+            <div className="flex gap-2 sm:gap-3 md:gap-4 overflow-x-auto pb-2 px-1">
+              {page.galleryImages.map((image, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setActiveGalleryIndex(idx)}
+                  className={`relative flex-shrink-0 w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 rounded-lg overflow-hidden border-2 transition-all ${
+                    activeGalleryIndex === idx
+                      ? "border-primary shadow-lg"
+                      : "border-gray-300 dark:border-gray-600 opacity-60 hover:opacity-100"
+                  }`}
+                >
+                  <Image
+                    src={image}
+                    alt={`Thumbnail ${idx + 1}`}
+                    fill
+                    quality={75}
+                    className="object-cover"
+                    sizes="100px"
+                  />
+                </button>
+              ))}
+            </div>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            {page.features.map((feature, idx) => (
-              <div
-                key={idx}
-                className="group bg-white dark:bg-slate-700 p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 border border-primary/10 hover:border-primary/50"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary/60 rounded-lg flex items-center justify-center flex-shrink-0 text-white font-bold text-lg shadow-lg group-hover:shadow-primary/50 transition-shadow">
-                    {idx + 1}
+        </section>
+      )}
+
+      {/* Video Section */}
+      {page.videoLink && (
+        <section className="py-12 md:py-24 bg-gradient-to-b from-gray-50 to-white dark:from-slate-800 dark:to-slate-900">
+          <div className="container px-4 md:px-0">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                Video
+              </h2>
+              <div className="w-16 h-1 bg-gradient-to-r from-primary/50 to-primary mx-auto rounded-full"></div>
+            </div>
+
+            <div className="max-w-4xl mx-auto">
+              <div className="relative w-full pt-[56.25%] rounded-2xl overflow-hidden shadow-2xl bg-black">
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src={page.videoLink}
+                  title="Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Location Section */}
+      {page.location && (
+        <section className="py-12 md:py-24 bg-white dark:bg-darklight">
+          <div className="container px-4 md:px-0">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                Location
+              </h2>
+              <div className="w-16 h-1 bg-gradient-to-r from-primary/50 to-primary mx-auto rounded-full"></div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+              {/* Map Section */}
+              <div className="order-2 md:order-1">
+                <div className="max-w-lg mx-auto">
+                  <div style={{ position: 'relative', paddingBottom: '66.66%', height: 0, overflow: 'hidden', borderRadius: '12px' }}>
+                    <iframe
+                      src={`https://maps.google.com/maps?q=${encodeURIComponent(page.location.name)}&output=embed`}
+                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
                   </div>
-                  <p className="text-gray-700 dark:text-gray-300 font-semibold pt-1 group-hover:text-primary transition-colors">
-                    {feature}
-                  </p>
                 </div>
               </div>
-            ))}
+
+              {/* Location Info */}
+              <div className="order-1 md:order-2">
+                <div className="bg-gradient-to-br from-primary/5 to-transparent dark:from-slate-700/30 p-8 rounded-2xl border border-primary/10">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+                    <span className="text-3xl">📍</span>
+                    {page.location.name}
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300 mb-6 text-lg">
+                    Coordinates: <span className="font-semibold text-primary">{page.location.coordinates}</span>
+                  </p>
+                  <Link
+                    href={page.location.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-all hover:shadow-lg"
+                  >
+                    <span>Open in Google Maps</span>
+                    <span>→</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
     <TicketSection />
     </main>
