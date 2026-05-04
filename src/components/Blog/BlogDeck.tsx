@@ -52,39 +52,68 @@ const BlogDeck: React.FC<BlogDeckProps> = ({ posts }) => {
   return (
     <section className="pt-8 dark:bg-darkmode pb-10" id="blog">
       <div className="container mx-auto px-4">
-        {/* Updated Grid: 1 column on mobile, 2 columns on lg */}
-        <div className="grid gap-8 grid-cols-1 lg:grid-cols-[1.7fr_0.9fr] lg:items-start">
+        {/* Changed grid layout: Sidebar (0.9fr) is now first, Card (1.7fr) is second */}
+        <div className="grid gap-8 grid-cols-1 lg:grid-cols-[0.9fr_1.7fr] lg:items-start">
           
-          <div className="relative">
-            {/* Buttons: Moved inside viewport on mobile (left-4/right-4), outside on desktop (lg:left-[-3rem]) */}
-            <div className="absolute left-4 top-1/2 z-20 -translate-y-1/2 lg:left-[-3rem]">
+          {/* SIDEBAR LIST: Placed first in the DOM for left-side positioning */}
+          <div className="order-2 lg:order-1 space-y-4 rounded-[28px] border border-slate-200 bg-white/90 p-4 shadow-xl backdrop-blur-xl lg:max-h-[720px] lg:overflow-hidden dark:border-slate-700 dark:bg-slate-950/90">
+            <div className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
+             
+            </div>
+            <div className="space-y-4 lg:max-h-[calc(720px-5.5rem)] lg:overflow-y-auto lg:pr-2">
+              {posts.map((blog, index) => (
+                <button
+                  key={blog.slug}
+                  type="button"
+                  onClick={() => handleSelect(index)}
+                  className={`group flex w-full items-center gap-3 rounded-3xl border p-3 text-left transition ${
+                    index === currentIndex 
+                      ? 'border-primary bg-primary/10' 
+                      : 'border-slate-200 bg-slate-50 dark:border-slate-700 dark:bg-slate-900'
+                  }`}
+                >
+                  <div className="h-16 w-16 overflow-hidden rounded-2xl flex-shrink-0">
+                    <img 
+                      src={blog.coverImage || '/images/hero/Black_1.png'} 
+                      alt={blog.title} 
+                      className="h-full w-full object-cover" 
+                    />
+                  </div>
+                  <p className="truncate text-sm font-semibold text-slate-900 dark:text-white">
+                    {blog.title}
+                  </p>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* MAIN CARD: Placed second in the DOM for right-side positioning */}
+          <div className="order-1 lg:order-2 relative">
+            {/* Navigation buttons */}
+            <div className="absolute -left-4 md:-left-16 top-1/2 z-20 -translate-y-1/2">
               <button
                 type="button"
                 onClick={() => handleSelect(previousIndex)}
-                className="inline-flex h-12 w-12 lg:h-14 lg:w-14 items-center justify-center rounded-full border border-slate-200 bg-white text-xl lg:text-2xl text-slate-700 shadow-xl transition duration-300 hover:border-primary hover:bg-primary/10 hover:text-primary dark:border-slate-700 dark:bg-slate-950 dark:text-slate-200"
-                aria-label="Previous post"
+                className="h-10 w-10 md:h-14 md:w-14 flex items-center justify-center rounded-full border border-slate-200 bg-white shadow-xl hover:text-primary dark:border-slate-700 dark:bg-slate-950"
               >
-                <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5 lg:h-6 lg:w-6 stroke-current">
+                <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6 stroke-current">
                   <path d="M15 18l-6-6 6-6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
             </div>
-            
-            <div className="absolute right-4 top-1/2 z-20 -translate-y-1/2 lg:right-[-3rem]">
+            <div className="absolute -right-4 md:-right-16 top-1/2 z-20 -translate-y-1/2">
               <button
                 type="button"
                 onClick={() => handleSelect(followingIndex)}
-                className="inline-flex h-12 w-12 lg:h-14 lg:w-14 items-center justify-center rounded-full border border-slate-200 bg-white text-xl lg:text-2xl text-slate-700 shadow-xl transition duration-300 hover:border-primary hover:bg-primary/10 hover:text-primary dark:border-slate-700 dark:bg-slate-950 dark:text-slate-200"
-                aria-label="Next post"
+                className="h-10 w-10 md:h-14 md:w-14 flex items-center justify-center rounded-full border border-slate-200 bg-white shadow-xl hover:text-primary dark:border-slate-700 dark:bg-slate-950"
               >
-                <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5 lg:h-6 lg:w-6 stroke-current">
+                <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6 stroke-current">
                   <path d="M9 6l6 6-6 6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
             </div>
 
-            {/* Main Card Container: Reduced height on mobile */}
-            <div className="relative min-h-[450px] md:min-h-[720px] overflow-hidden rounded-[32px]">
+            <div className="relative min-h-[500px] md:min-h-[720px] rounded-[32px]">
               <div
                 className="relative h-full w-full transition-transform ease-[cubic-bezier(0.22,1,0.36,1)]"
                 style={{
@@ -110,40 +139,6 @@ const BlogDeck: React.FC<BlogDeckProps> = ({ posts }) => {
             </div>
           </div>
 
-          {/* Sidebar */}
-          <div className="space-y-4 rounded-[28px] border border-slate-200 bg-white/90 p-4 shadow-xl backdrop-blur-xl lg:max-h-[720px] lg:overflow-hidden dark:border-slate-700 dark:bg-slate-950/90">
-            <div className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
-              Browse posts
-            </div>
-            <div className="space-y-4 lg:max-h-[calc(720px-5.5rem)] lg:overflow-y-auto lg:pr-2">
-              {posts.map((blog, index) => (
-                <button
-                  key={blog.slug}
-                  type="button"
-                  onClick={() => handleSelect(index)}
-                  className={`group flex w-full items-center gap-3 rounded-3xl border p-3 text-left transition duration-300 ease-out ${
-                    index === currentIndex
-                      ? 'border-primary bg-primary/10 shadow-inner'
-                      : 'border-slate-200 bg-slate-50 hover:border-primary/70 hover:bg-primary/5 dark:border-slate-700 dark:bg-slate-900 dark:hover:border-primary/50'
-                  }`}
-                >
-                  <div className="relative h-16 w-16 lg:h-20 lg:w-20 overflow-hidden rounded-2xl bg-slate-100 dark:bg-slate-900 flex-shrink-0">
-                    <img
-                      src={blog.coverImage || '/images/hero/Black_1.png'}
-                      alt={blog.title}
-                      className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="min-w-0 overflow-hidden">
-                    <p className="truncate text-sm font-semibold text-slate-900 dark:text-white">{blog.title}</p>
-                    <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-                      {typeof blog.date === 'object' ? new Date(blog.date).toISOString().slice(0, 10) : blog.date}
-                    </p>
-                  </div>
-                </button>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>

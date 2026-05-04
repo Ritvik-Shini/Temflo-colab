@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Footer: FC = () => {
     return (
-        <footer className="bg-secondary">
+        <footer className="bg-IcyBreeze dark:bg-secondary">
             <div className="container">
                 {/* Top Section - Logo, Navigation, Contact, Social */}
                 <div className="grid md:grid-cols-12 gap-8 md:pt-44 pt-16 md:pb-20 pb-12 border-b border-solid border-dark_border">
@@ -24,18 +24,18 @@ const Footer: FC = () => {
 
                     {/* Navigation Links Section */}
                     <div className="md:col-span-3 col-span-12">
-                        <h4 className="text-white font-semibold text-lg mb-4">Navigation</h4>
+                        <h4 className="text-primary font-semibold text-lg mb-4">Navigation</h4>
                         <ul className="space-y-2">
-                            <li className="text-PaleCerulean text-base font-normal hover:text-ElectricAqua transition-all duration-300">
+                            <li className="text-primary text-base font-normal hover:text-ElectricAqua transition-all duration-300">
                                 <Link href="/">Home</Link>
                             </li>
-                            <li className="text-PaleCerulean text-base font-normal hover:text-ElectricAqua transition-all duration-300">
+                            <li className="text-primary text-base font-normal hover:text-ElectricAqua transition-all duration-300">
                                 <Link href="/blog">Projects</Link>
                             </li>
-                            <li className="text-PaleCerulean text-base font-normal hover:text-ElectricAqua transition-all duration-300">
+                            <li className="text-primary text-base font-normal hover:text-ElectricAqua transition-all duration-300">
                                 <Link href="/schedules">About</Link>
                             </li>
-                            <li className="text-PaleCerulean text-base font-normal hover:text-ElectricAqua transition-all duration-300">
+                            <li className="text-primary text-base font-normal hover:text-ElectricAqua transition-all duration-300">
                                 <Link href="/contact">Contact</Link>
                             </li>
                         </ul>
@@ -43,31 +43,31 @@ const Footer: FC = () => {
 
                     {/* Get In Touch Section */}
                     <div className="md:col-span-3 col-span-12">
-                        <h4 className="text-white font-semibold text-lg mb-4">Get In Touch</h4>
+                        <h4 className="text-primary font-semibold text-lg mb-4">Get In Touch</h4>
                         <ul className="space-y-2">
-                            <li className="text-PaleCerulean text-base font-normal">
-                                <span className="text-white">Phone:</span> +91-120-4217441
+                            <li className="text-primary text-base font-normal">
+                                <span className="text-primary">Phone:</span> +91-120-4217441
                             </li>
-                            <li className="text-PaleCerulean text-base font-normal">
-                                <span className="text-white">Email:</span> info@temflo.co.in
+                            <li className="text-primary text-base font-normal">
+                                <span className="text-primary">Email:</span> info@temflo.co.in
                             </li>
-                            <li className="text-PaleCerulean text-base font-normal">
-                                <span className="text-white">Website:</span> www.temflo.co.in
+                            <li className="text-primary text-base font-normal">
+                                <span className="text-primary">Website:</span> www.temflo.co.in
                             </li>
                         </ul>
                     </div>
 
                     {/* Support & Social Section */}
                     <div className="md:col-span-3 col-span-12">
-                        <h4 className="text-white font-semibold text-lg mb-4">Support</h4>
+                        <h4 className="text-primary font-semibold text-lg mb-4">Support</h4>
                         <ul className="space-y-3">
-                            <li className="text-PaleCerulean text-base font-normal hover:text-ElectricAqua transition-all duration-300">
+                            <li className="text-primary text-base font-normal hover:text-ElectricAqua transition-all duration-300">
                                 <Link href="/">Terms of Use</Link>
                             </li>
-                            <li className="text-PaleCerulean text-base font-normal hover:text-ElectricAqua transition-all duration-300">
+                            <li className="text-primary text-base font-normal hover:text-ElectricAqua transition-all duration-300">
                                 <Link href="/">Privacy Statement</Link>
                             </li>
-                            <li className="text-white font-semibold text-lg mt-6 mb-3">Follow Us</li>
+                            <li className="text-primary font-semibold text-lg mt-6 mb-3">Follow Us</li>
                             <li>
                                 <ul className="flex items-center gap-4">
                                     <li>
@@ -75,7 +75,7 @@ const Footer: FC = () => {
                                             <svg
                                                 width="26"
                                                 height="27"
-                                                fill="white"
+                                                fill="#883FFC"
                                                 viewBox="0 0 26 27"
                                                 className="group-hover:fill-ElectricAqua transition-colors"
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +102,7 @@ const Footer: FC = () => {
                                                 width="26"
                                                 height="27"
                                                 viewBox="0 0 26 27"
-                                                fill="#fff"
+                                                fill="#883FFC"
                                                 className="group-hover:fill-ElectricAqua transition-colors"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
@@ -128,7 +128,7 @@ const Footer: FC = () => {
                                                 width="26"
                                                 height="28"
                                                 viewBox="0 0 26 28"
-                                                fill="#fff"
+                                                fill="#883FFC"
                                                 className="group-hover:fill-ElectricAqua transition-colors"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
@@ -153,20 +153,20 @@ const Footer: FC = () => {
                 <div className="grid md:grid-cols-12 gap-8 py-8 md:py-12">
                     {/* Copyright Section */}
                     <div className="md:col-span-6 col-span-12">
-                        <p className="text-base font-normal text-PaleCerulean mb-2">
+                        <p className="text-base font-normal text-primary mb-2">
                             © All rights reserved. Made by{" "}
                             <Link
                                 href="/"
-                                className="hover:text-white transition-colors"
+                                className="hover:text-primary transition-colors"
                             >
                                 info@TSLP
                             </Link>
                         </p>
-                        <p className="text-base font-normal text-PaleCerulean">
+                        <p className="text-base font-normal text-primary">
                             Distributed by{" "}
                             <Link
                                 href="/"
-                                className="hover:text-white transition-colors"
+                                className="hover:text-primary transition-colors"
                             >
                                 Temflo System Pvt. Ltd.
                             </Link>
@@ -176,7 +176,7 @@ const Footer: FC = () => {
                     {/* Newsletter Section */}
                     <div className="md:col-span-6 col-span-12">
                         <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-end">
-                            <p className="text-base sm:text-lg text-PaleCerulean font-normal whitespace-nowrap">
+                            <p className="text-base sm:text-lg text-primary font-normal whitespace-nowrap">
                                 Subscribe Newsletter
                             </p>
                             <form className="newsletter-form w-full sm:w-auto flex rounded-md overflow-hidden">

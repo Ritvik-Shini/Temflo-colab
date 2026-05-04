@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState, useCallback } from "react";
 import { headerData } from "../Header/Navigation/menuData";
 import Logo from "./Logo";
 import HeaderLink from "../Header/Navigation/HeaderLink";
@@ -15,8 +15,6 @@ import { FailedLogin } from "@/components/Auth/AuthDialog/FailedLogin";
 import { UserRegistered } from "@/components/Auth/AuthDialog/UserRegistered";
 import AuthDialogContext from "@/app/context/AuthDialogContext";
 
-
-
 const Header: React.FC = () => {
   const pathUrl = usePathname();
   const { theme, setTheme } = useTheme();
@@ -25,27 +23,31 @@ const Header: React.FC = () => {
   const [sticky, setSticky] = useState(false);
   const [isSignInOpen, setIsSignInOpen] = useState(false);
   const [isSignUpOpen, setIsSignUpOpen] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   const navbarRef = useRef<HTMLDivElement>(null);
   const signInRef = useRef<HTMLDivElement>(null);
   const signUpRef = useRef<HTMLDivElement>(null);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
-  const handleScroll = () => {
-    setSticky(window.scrollY >= 80);
-  };
+  const handleScroll = useCallback(() => {
+    const scrollTop = window.scrollY;
+    
+    // Set sticky at 80px
+    setSticky(scrollTop >= 80);
+    
+    // Calculate shrink progress: shrink between 80px and 250px
+    const shrinkStart = 80;
+    const shrinkEnd = 250;
+    const progress = Math.min((scrollTop - shrinkStart) / (shrinkEnd - shrinkStart), 1);
+    setScrollProgress(Math.max(progress, 0));
+  }, []);
 
-  const handleClickOutside = (event: MouseEvent) => {
-    if (
-      signInRef.current &&
-      !signInRef.current.contains(event.target as Node)
-    ) {
+  const handleClickOutside = useCallback((event: MouseEvent) => {
+    if (signInRef.current && !signInRef.current.contains(event.target as Node)) {
       setIsSignInOpen(false);
     }
-    if (
-      signUpRef.current &&
-      !signUpRef.current.contains(event.target as Node)
-    ) {
+    if (signUpRef.current && !signUpRef.current.contains(event.target as Node)) {
       setIsSignUpOpen(false);
     }
     if (
@@ -55,38 +57,39 @@ const Header: React.FC = () => {
     ) {
       setNavbarOpen(false);
     }
-  };
+  }, [navbarOpen]);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [navbarOpen, isSignInOpen, isSignUpOpen]);
+  }, [handleScroll, handleClickOutside]);
 
-  // useEffect(() => {
-  //   if (isSignInOpen || isSignUpOpen || navbarOpen) {
-  //     document.body.style.overflow = "hidden";
-  //   } else {
-  //     document.body.style.overflow = "";
-  //   }
-  // }, [isSignInOpen, isSignUpOpen, navbarOpen]); 
-
+  // Scale factor: 1 at top, 0.7 when fully shrunk (stronger compact effect)
+  const logoScale = 1 - scrollProgress * 0.3;
+  const paddingValue = 24 - scrollProgress * 22; // From py-6 to py-0.5
+  
   const authDialog = useContext(AuthDialogContext);
 
   return (
     <>
     <div className="relative"></div>
     <header
-      className={`fixed h-24 top-0 py-1 z-50 w-full bg-transparent transition-all  ${
+      className={`fixed top-0 z-50 w-full bg-transparent transition-all duration-300 ${
         sticky ? "shadow-lg dark:shadow-darkmd bg-white dark:bg-secondary" : "shadow-none"
       }`}
     >
-      <div className="container">
-        <div className="flex items-center justify-between py-6">
-          <Logo />
+      <div className="container h-full">
+        <div 
+          className="flex items-center justify-between transition-all duration-300"
+          style={{ padding: `${paddingValue}px 0` }}
+        >
+          <div style={{ transform: `scale(${logoScale})`, transformOrigin: 'left', transition: 'transform 300ms ease-out' }}>
+            <Logo />
+          </div>
           <ul className="hidden lg:flex flex-grow items-center justify-center space-x-6">
             {headerData.map((item, index) => (
               <HeaderLink key={index} item={item} />

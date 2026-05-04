@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 
 const BlogPage = () => {
     const breadcrumbLinks = [
-        { href: "/", text: "Home" },
-        { href: "/Project", text: "Project" },
+        { href: "/", text: "" },
+  
     ];
     return (
         <>
@@ -24,7 +24,7 @@ const BlogPage = () => {
   
 </div>
             <BlogList />
-            <TicketSection/>
+            
         </>
     );
 };

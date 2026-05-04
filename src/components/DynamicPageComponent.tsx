@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { PageEntry } from "@/lib/pagesData";
@@ -13,6 +13,36 @@ interface DynamicPageProps {
 const DynamicPageComponent: React.FC<DynamicPageProps> = ({ page }) => {
   const breadcrumbs = generateBreadcrumbs(page);
   const [activeGalleryIndex, setActiveGalleryIndex] = useState(0);
+  const [galleryFading, setGalleryFading] = useState(false);
+  const intervalRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    if (!page.galleryImages || page.galleryImages.length <= 1) {
+      return;
+    }
+
+    const galleryLength = page.galleryImages.length;
+
+    const cycleGallery = () => {
+      setGalleryFading(true);
+      timeoutRef.current = setTimeout(() => {
+        setActiveGalleryIndex((prev) => (prev + 1) % galleryLength);
+        setGalleryFading(false);
+      }, 500);
+    };
+
+    intervalRef.current = setInterval(cycleGallery, 4500);
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, [page.galleryImages]);
 
   return (
     <main className="bg-white dark:bg-darklight min-h-screen pt-24">
@@ -109,13 +139,13 @@ const DynamicPageComponent: React.FC<DynamicPageProps> = ({ page }) => {
 
             {/* Main Image */}
             <div className="mb-6">
-              <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl group bg-slate-100 dark:bg-slate-800">
+              <div className={`relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl group bg-slate-100 dark:bg-slate-800 transition-opacity duration-700 ${galleryFading ? "opacity-40" : "opacity-100"}`}>
                 <Image
                   src={page.galleryImages[activeGalleryIndex]}
                   alt={`Gallery ${activeGalleryIndex + 1}`}
                   fill
                   quality={100}
-                  className="object-contain object-center transition-all duration-500"
+                  className="object-contain object-center transition-transform duration-500"
                   sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 768px) calc(100vw - 2rem), (max-width: 1024px) calc(100vw - 2rem), 100vw"
                 />
                 <div className="absolute inset-0 rounded-2xl border-2 border-primary/20 pointer-events-none"></div>
@@ -210,9 +240,7 @@ const DynamicPageComponent: React.FC<DynamicPageProps> = ({ page }) => {
                     <span className="text-3xl">📍</span>
                     {page.location.name}
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 mb-6 text-lg">
-                    Coordinates: <span className="font-semibold text-primary">{page.location.coordinates}</span>
-                  </p>
+                 
                   <Link
                     href={page.location.mapsUrl}
                     target="_blank"

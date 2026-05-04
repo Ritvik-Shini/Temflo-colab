@@ -31,7 +31,10 @@ const WorkSpeakers = ({ showTitle = true }) => {
               }`}
             >
               <div className="overflow-hidden rounded-lg">
+                 <Link href={speaker.href}> 
+                 
                 <Image
+                  
                   src={speaker.src}
                   alt={speaker.alt}
                   width={0}
@@ -41,6 +44,7 @@ const WorkSpeakers = ({ showTitle = true }) => {
                   sizes="100vh"
                   className=" object-cover w-full h-full transition-all duration-0.4s group-hover:scale-110"
                 />
+              </Link>
               </div>
               <div className="pt-6">
                <Link href={speaker.href}> 
