@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 
 const Page = () => {
   const breadcrumbLinks = [
-    { href: "/", text: "Home" },
-    { href: "/Division", text: "Division" },
+    { href: "/", text: "" },
+   
   ];
 
   // Logic: IDs 1, 2, 3, 4, 5
@@ -26,7 +26,7 @@ const Page = () => {
   return (
     <>
       <HeroSub
-        title="Project Category"
+        title="Division "
         description="Explore our project categories showcasing innovative solutions, custom developments, and scalable systems."
         breadcrumbLinks={breadcrumbLinks}
       />
@@ -44,6 +44,7 @@ const Page = () => {
               }`}
             >
               <div className="overflow-hidden rounded-lg">
+               <Link href={speaker.href}> 
                 <Image
                   
                   src={speaker.src}
@@ -52,6 +53,7 @@ const Page = () => {
                   height={500}
                   className="object-cover w-full h-full transition-all duration-500 group-hover:scale-110"
                 />
+                </Link>
                 
               </div>
            
@@ -86,6 +88,7 @@ const Page = () => {
               }`}
             >
               <div className="overflow-hidden rounded-lg">
+                <Link href={speaker.href}> 
                 <Image
                   src={speaker.src}
                   alt={speaker.alt}
@@ -93,6 +96,7 @@ const Page = () => {
                   height={500}
                   className="object-cover w-full h-full transition-all duration-500 group-hover:scale-110"
                 />
+                </Link>
               </div>
               <div className="pt-6">
                <Link href={speaker.href}> 
@@ -110,7 +114,10 @@ const Page = () => {
       </div>
 
       <Testimonials />
-      <TicketSection />
+      <div>
+        <br></br><br></br><br></br>
+      </div>
+    
     </>
   );
 };

@@ -57,6 +57,7 @@ export default function LightandsoundshowPage() {
         {lightandsoundshow.map((solution) => (
           <div key={solution.id} className="bg-white overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
             <div className="relative h-72 md:h-48 w-full"> 
+             <Link href={solution.href}>
               <Image 
                 src={solution.src} 
                 alt={solution.title}
@@ -65,6 +66,7 @@ export default function LightandsoundshowPage() {
                 className="transition-transform duration-300 group-hover:scale-105"
                 quality={80} 
               />
+              </Link>
             </div>
             <div className="p-6">
               <Link href={solution.href}>

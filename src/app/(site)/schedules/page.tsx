@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 
 const page = () => {
   const breadcrumbLinks = [
-    { href: "/", text: "Home" },
-    { href: "/schedules", text: "Why Us" },
+    { href: "/", text: "" },
+    
   ];
   return (
     <>
@@ -30,8 +30,11 @@ const page = () => {
         </div>
       </section>      
       <div>
-        <Testimonials />
-        <TicketSection/>
+      <Testimonials />
+      
+      </div>
+      <div>
+        <br></br><br></br><br></br>
       </div>
     </>
   );

@@ -178,7 +178,7 @@ const Beapartofus = () => {
                             <button
                                 type="submit"
                                 disabled={!consent}
-                                className={`btn btn-1 hover-filled-slide-down text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 ${
+                                className={`btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden transition-all duration-300 ${
                                     consent
                                         ? "bg-primary hover:shadow-lg cursor-pointer"
                                         : "bg-gray-400 dark:bg-gray-600 cursor-not-allowed opacity-60"
