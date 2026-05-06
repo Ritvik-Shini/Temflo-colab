@@ -12,7 +12,7 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
     return (
         <article className="group overflow-hidden rounded-[28px] transition-all duration-500 ease-out flex flex-col">
             <div className="relative overflow-hidden rounded-t-[28px] bg-slate-200 dark:bg-slate-800">
-                <Link href={`/blog/${slug}`} aria-label="Open blog page" className="block w-full">
+                <Link href={detailsHref} aria-label="Open blog page" className="block w-full">
                     <Image
                         src={coverImage || '/images/hero/Black_1.png'}
                         alt={title || "blog image"}
@@ -26,10 +26,10 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
 
             <div className="p-6 sm:p-7 bg-white dark:bg-slate-950 rounded-b-[28px]">
                 <p className="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-primary/90">
-                    Featured insight
+                    
                 </p>
                 <h3 className="mb-4 text-2xl font-bold leading-tight text-slate-900 dark:text-white">
-                    <Link href={`/blog/${slug}`} className="hover:text-primary transition-colors">
+                    <Link href={detailsHref} className="hover:text-primary transition-colors">
                         {title}
                     </Link>
                 </h3>
@@ -39,7 +39,7 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
                 <div className="flex flex-wrap gap-3">
                     <Link
                         href={detailsHref}
-                        className="inline-flex items-center justify-center rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-primary"
+                        className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/90 hover:text-primary border border-primary"
                     >
                         View Details
                     </Link>

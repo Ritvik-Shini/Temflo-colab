@@ -62,10 +62,10 @@ const Footer: FC = () => {
                         <h4 className="text-primary font-semibold text-lg mb-4">Support</h4>
                         <ul className="space-y-3">
                             <li className="text-primary text-base font-normal hover:text-ElectricAqua transition-all duration-300">
-                                <Link href="/">Terms of Use</Link>
+                                <Link href="/Termsofuse">Terms of Use</Link>
                             </li>
                             <li className="text-primary text-base font-normal hover:text-ElectricAqua transition-all duration-300">
-                                <Link href="/">Privacy Statement</Link>
+                                <Link href="/Privacystatement">Privacy Statement</Link>
                             </li>
                             <li className="text-primary font-semibold text-lg mt-6 mb-3">Follow Us</li>
                             <li>
@@ -77,7 +77,7 @@ const Footer: FC = () => {
                                                 height="27"
                                                 fill="#883FFC"
                                                 viewBox="0 0 26 27"
-                                                className="group-hover:fill-ElectricAqua transition-colors"
+                                                className="group-hover:fill-white transition-colors"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <g clipPath="url(#clip0_7_993)">
@@ -103,7 +103,7 @@ const Footer: FC = () => {
                                                 height="27"
                                                 viewBox="0 0 26 27"
                                                 fill="#883FFC"
-                                                className="group-hover:fill-ElectricAqua transition-colors"
+                                                className="group-hover:fill-white transition-colors"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <g clipPath="url(#clip0_7_995)">
@@ -129,7 +129,7 @@ const Footer: FC = () => {
                                                 height="28"
                                                 viewBox="0 0 26 28"
                                                 fill="#883FFC"
-                                                className="group-hover:fill-ElectricAqua transition-colors"
+                                                className="group-hover:fill-white transition-colors"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <g clipPath="url(#clip0_7_997)">
