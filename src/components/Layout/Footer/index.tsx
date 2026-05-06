@@ -173,27 +173,9 @@ const Footer: FC = () => {
                         </p>
                     </div>
 
-                    {/* Newsletter Section */}
-                    <div className="md:col-span-6 col-span-12">
-                        <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-end">
-                            <p className="text-base sm:text-lg text-primary font-normal whitespace-nowrap">
-                                Subscribe Newsletter
-                            </p>
-                            <form className="newsletter-form w-full sm:w-auto flex rounded-md overflow-hidden">
-                                <input
-                                    type="email"
-                                    placeholder="Email address*"
-                                    className="flex-1 sm:flex-none p-3 sm:p-4 text-sm sm:text-base border-0 rounded-l-md outline-0 dark:bg-darkmode dark:text-white"
-                                />
-                                <button
-                                    type="submit"
-                                    className="btn btn-1 hover-filled-slide-down bg-primary rounded-r-md"
-                                >
-                                    <span className="!border-0 !text-white text-sm sm:text-base">Subscribe</span>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
+                   
+                        
+                    
                 </div>
             </div>
         </footer>

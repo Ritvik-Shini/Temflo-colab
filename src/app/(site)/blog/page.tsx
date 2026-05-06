@@ -16,7 +16,7 @@ const BlogPage = () => {
     return (
         <>
             <HeroSub
-                title="Welcome to Our Project"
+                title="Projects"
                 description="Each of our project is distinguishable, every facility different, and each client unique. Through these projects, we have developed a strong understanding of the procedures and strategies to position our project teams and clients for success."
                 breadcrumbLinks={breadcrumbLinks}
             />
