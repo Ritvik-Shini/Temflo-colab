@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
+
 const ContactInfo = () => {
     return (
         <>
@@ -22,7 +23,7 @@ const ContactInfo = () => {
                                     </p>
                                 </div>
                                 <div>
-                                    <Link href="#" className="text-primary text-lg font-medium flex items-center gap-3 group hover:text-secondary dark:hover:text-white">
+                                    <Link href="/ContactForm" className="text-primary text-lg font-medium flex items-center gap-3 group hover:text-secondary dark:hover:text-white">
                                         Leave a message
                                         <svg
                                             width="23"
@@ -53,8 +54,9 @@ const ContactInfo = () => {
                                       Be a part of our team and help us shape the future of technology.
                                     </p>
                                 </div>
+                                <br></br>
                                 <div>
-                                    <Link href="/joinus" className="text-primary text-lg font-medium flex items-center gap-3 group hover:text-secondary dark:hover:text-white">
+                                    <Link href="/careers" className="text-primary text-lg font-medium flex items-center gap-3 group hover:text-secondary dark:hover:text-white">
                                         Send an application
                                         <svg
                                             width="23"

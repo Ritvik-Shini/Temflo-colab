@@ -6,13 +6,13 @@ import HeroSub from "@/components/SharedComponent/HeroSub";
 import { Metadata } from "next";
 import TicketSection from "@/components/Home/TicketSection";
 export const metadata: Metadata = {
-    title: "Contact | Symposium",
+    title: "Contact | Temflo",
 };
 
 const page = () => {
   const breadcrumbLinks = [
-    { href: "/", text: "Home" },
-    { href: "/contact", text: "Contact" },
+    { href: "/", text: " "},
+    { href: "/", text: "" },
   ];
   return (
     <>

@@ -29,9 +29,9 @@ const TicketSection = () => {
                                 </p>
                                 <Link
                                     href="/joinus"
-                                    className="btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden before:bg-white"
+                                    className="btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden before:bg-white "
                                 >
-                                    <span className="sm:!px-20 px-10 !border-white !text-ElectricAqua ">
+                                    <span className="sm:!px-20 px-10 !border-white !text-xl !text-primary hover:!text-white transition-colors">
                                         Join Us 
                                     </span>
                                 </Link>
