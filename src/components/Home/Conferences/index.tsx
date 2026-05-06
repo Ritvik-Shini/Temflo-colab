@@ -36,7 +36,7 @@ const Conferences = () => {
               href="/blog"
               className="btn_outline btn-2 hover-outline-slide-down"
             >
-              <span>More Projects</span>
+              <span>Explore</span>
             </Link>
           </div>
         </div>
