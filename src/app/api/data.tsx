@@ -84,7 +84,7 @@ export const conferences = [
     {
         title: "Temflo Systems provides Delhi Metro with integrated control room solutions, featuring ergonomic operator. ",
         profiles: [
-             "/images/upcoming/glass_1.png"   
+             "/images/upcoming/Delhi Metro.jpeg"   
          
         ],
    
@@ -92,7 +92,7 @@ export const conferences = [
     {
         title: "Local Business Global Event",
         profiles: [
-            "/images/upcoming/glass_2.png"
+            "/images/upcoming/EFKON.jpeg"
         ],
         speakers: "Martin Luthar",
         buttonText: "Book Ticket",
@@ -101,21 +101,21 @@ export const conferences = [
     {
         title: "Frontiers Conference Perspectives",
         profiles: [
-            "/images/upcoming/glass_4.png"
+            "/images/upcoming/Honey well.jpeg"
         ],
         
     }, // Profile-3
     {
         title: "A Focus Conference Initiatives",
         profiles: [
-            "/images/upcoming/glass_7.png"
+            "/images/upcoming/LT.jpeg"
         ],
         
     }, // Profile-4
     {
         title: "Science and Beyond",
         profiles: [
-            "/images/upcoming/glass_6.png",
+            "/images/upcoming/NTPC.jpeg",
             
         ],
        
@@ -124,21 +124,21 @@ export const conferences = [
     {
         title: "Global Event",
         profiles: [
-            "/images/upcoming/glass_8.png",
+            "/images/upcoming/Tech Mahindra.jpeg",
         ],
         
     }, // Profile-6
     {
         title: "Cultural Exchange in the Digital Age",
         profiles: [
-            "/images/upcoming/glass_9.png",
+            "/images/upcoming/SIEMENS.jpeg",
         ],
        
     }, // Profile-7
     {
         title: "Education for Tomorrow",
         profiles: [
-            "/images/upcoming/glass_10.png",
+            "/images/upcoming/Welspun.jpeg",
         ],
         
     }, // Profile-8
@@ -147,10 +147,10 @@ export const conferences = [
 export const intermissions = [
     {
         title: "dummy",
-        image: "/images/upcoming/glass_3.png",  
+        image: "/images/upcoming/Techno Sys.jpeg",  
     },
     {
         title: "demo",
-        image: "/images/upcoming/glass_5.png", 
+        image: "/images/upcoming/Terra CIS.jpeg", 
     },
 ];

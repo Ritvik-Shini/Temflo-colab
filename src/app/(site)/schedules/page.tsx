@@ -8,7 +8,7 @@ import Testimonial from "@/components/SharedComponent/Testimonial";
 import Testimonials from "@/components/Home/Testimonials";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Why us | Symposium",
+  title: "Why us | Temflo",
 };
 
 const page = () => {

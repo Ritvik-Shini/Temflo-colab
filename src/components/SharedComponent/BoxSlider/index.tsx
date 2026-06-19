@@ -43,11 +43,11 @@ const BoxSlider = () => {
         
            <div className="mt-14 relative">
                                                                 <Image
-                                                                    src="/images/hero/Delhi Metro.png"
+                                                                    src="/images/hero/Delhi Metro.jpeg"
                                                                     alt="Product"
-                                                                    width={85}
-                                                                    height={65}
-                                                                    style={{width:'85', height:'65'}}
+                                                                    width={75}
+                                                                    height={55}
+                                                                    style={{width:'75', height:'55'}}
                                                                     quality={100}
                                                                     sizes="100vh"
                                                                     className="dark"
@@ -58,11 +58,11 @@ const BoxSlider = () => {
         
          <div className="mt-14 relative">
                                                                <Image
-                                                                    src="/images/hero/Bharat_Electronics.png"
+                                                                    src="/images/hero/EFKON.jpeg"
                                                                     alt="Product"
-                                                                    width={100}
-                                                                    height={95}
-                                                                    style={{width:'100', height:'95'}}
+                                                                    width={75}
+                                                                    height={55}
+                                                                    style={{width:'75', height:'55'}}
                                                                     quality={100}
                                                                     sizes="100vh"
                                                                     className="dark"
@@ -73,11 +73,11 @@ const BoxSlider = () => {
         
          <div className="mt-14 relative">
                                                                <Image
-                                                                    src="/images/hero/Honeywell.png"
+                                                                    src="/images/hero/Honey well.jpeg"
                                                                     alt="Product"
-                                                                    width={95}
-                                                                    height={75}
-                                                                    style={{width:'95', height:'75'}}
+                                                                    width={75}
+                                                                    height={55}
+                                                                    style={{width:'75', height:'55'}}
                                                                     quality={100}
                                                                     sizes="100vh"
                                                                     className="dark"
@@ -87,11 +87,11 @@ const BoxSlider = () => {
         
           <div className="mt-14 relative">
                                                                <Image
-                                                                    src="/images/hero/hfcl.png"
+                                                                    src="/images/hero/LT.jpeg"
                                                                     alt="Product"
-                                                                    width={35}
-                                                                    height={25}
-                                                                    style={{width:'35', height:'25'}}
+                                                                    width={75}
+                                                                    height={55}
+                                                                    style={{width:'75', height:'55'}}
                                                                     quality={100}
                                                                     sizes="100vh"
                                                                     className="dark"
@@ -101,11 +101,11 @@ const BoxSlider = () => {
         
           <div className="mt-14 relative">
                                                                <Image
-                                                                    src="/images/hero/NTPC.png"
+                                                                    src="/images/hero/NTPC.jpeg"
                                                                     alt="Product"
-                                                                    width={45}
-                                                                    height={25}
-                                                                    style={{width:'45', height:'25'}}
+                                                                    width={75}
+                                                                    height={55}
+                                                                    style={{width:'75', height:'55'}}
                                                                     quality={100}
                                                                     sizes="100vh"
                                                                     className="dark"
@@ -115,11 +115,11 @@ const BoxSlider = () => {
       
           <div className="mt-14 relative">
                                                                <Image
-                                                                    src="/images/hero/Tech mahindra.png"
+                                                                    src="/images/hero/Tech Mahindra.jpeg"
                                                                     alt="Product"
-                                                                    width={165}
-                                                                    height={145}
-                                                                    style={{width:'165', height:'145'}}
+                                                                    width={75}
+                                                                    height={55}
+                                                                    style={{width:'75', height:'55'}}
                                                                     quality={100}
                                                                     sizes="100vh"
                                                                     className="dark"
@@ -129,7 +129,7 @@ const BoxSlider = () => {
     
            <div className="mt-14 relative">
                                                                <Image
-                                                                    src="/images/hero/LT.png"
+                                                                    src="/images/hero/SIEMENS.jpeg"
                                                                     alt="Product"
                                                                     width={75}
                                                                     height={55}
@@ -143,11 +143,11 @@ const BoxSlider = () => {
         
           <div className="mt-14 relative">
                                                                <Image
-                                                                    src="/images/hero/WELSPUN.png"
+                                                                    src="/images/hero/Welspun.jpeg"
                                                                     alt="Product"
-                                                                    width={45}
-                                                                    height={25}
-                                                                    style={{width:'45', height:'25'}}
+                                                                    width={75}
+                                                                    height={55}
+                                                                    style={{width:'75', height:'55'}}
                                                                     quality={100}
                                                                     sizes="100vh"
                                                                     className="dark"
@@ -157,11 +157,11 @@ const BoxSlider = () => {
         
            <div className="mt-14 relative">
                                                                <Image
-                                                                    src="/images/hero/Ujvn Limited.png"
+                                                                    src="/images/hero/Techno Sys.jpeg"
                                                                     alt="Product"
-                                                                    width={85}
-                                                                    height={65}
-                                                                    style={{width:'85', height:'65'}}
+                                                                    width={75}
+                                                                    height={55}
+                                                                    style={{width:'75', height:'55'}}
                                                                     quality={100}
                                                                     sizes="100vh"
                                                                     className="dark"

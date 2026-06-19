@@ -48,8 +48,8 @@ const Schedules = () => {
                     {intermissions[0].title}
                   </h6>
                 </div>
-                <div className="flex items-center flex-wrap gap-30 lg:min-w-96 min-w-max">
-                  <div className="flex items-center">
+                <div className="flex justify-end flex-wrap gap-30 lg:min-w-96 min-w-max">
+                  <div className="flex justify-end  pr-32">
                     <Image
                       src={intermissions[0].image}
                       alt="coffee break"
@@ -60,11 +60,6 @@ const Schedules = () => {
                       sizes="100vh"
                       className="!w-18 !h-12 "
                     />
-                  </div>
-                  <div>                    
-                    <p className="text-lg font-normal text-SlateBlueText dark:text-opacity-80">
-                      {intermissions[0].title}
-                    </p>
                   </div>
                 </div>
                 <div className="lg:min-w-40 min-w-max"></div> {/* No button for intermission row */}
@@ -78,8 +73,8 @@ const Schedules = () => {
                     {intermissions[1].title}
                   </h6>
                 </div>
-                <div className="flex items-center flex-wrap gap-30 lg:min-w-96 min-w-max">
-                  <div className="flex items-center">
+                <div className="flex justify-end flex-wrap gap-30 lg:min-w-96 min-w-max">
+                  <div className="flex justify-end pr-32">
                     <Image
                       src={intermissions[1].image}
                       alt="lunch break"
@@ -91,11 +86,7 @@ const Schedules = () => {
                       className="!w-26 !h-20 "
                     />
                   </div>
-                  <div>                    
-                    <p className="text-lg font-normal text-SlateBlueText dark:text-opacity-80">
-                      {intermissions[1].title}
-                    </p>
-                  </div>
+
                 </div>
                 <div className="lg:min-w-40 min-w-max" ></div> {/* No button for intermission row */}
               </div>

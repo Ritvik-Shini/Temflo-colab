@@ -24,18 +24,18 @@ const Footer: FC = () => {
 
                     {/* Navigation Links Section */}
                     <div className="md:col-span-3 col-span-12">
-                        <h4 className="text-primary font-semibold text-lg mb-4">Navigation</h4>
+                        <h4 className="text-primary dark:text-white font-semibold text-lg mb-4">Navigation</h4>
                         <ul className="space-y-2">
-                            <li className="text-primary text-base font-normal hover:text-ElectricAqua transition-all duration-300">
+                            <li className="text-primary dark:text-white text-base font-normal hover:text-ElectricAqua transition-all duration-300">
                                 <Link href="/">Home</Link>
                             </li>
-                            <li className="text-primary text-base font-normal hover:text-ElectricAqua transition-all duration-300">
+                            <li className="text-primary dark:text-white text-base font-normal hover:text-ElectricAqua transition-all duration-300">
                                 <Link href="/blog">Projects</Link>
                             </li>
-                            <li className="text-primary text-base font-normal hover:text-ElectricAqua transition-all duration-300">
+                            <li className="text-primary dark:text-white text-base font-normal hover:text-ElectricAqua transition-all duration-300">
                                 <Link href="/schedules">About</Link>
                             </li>
-                            <li className="text-primary text-base font-normal hover:text-ElectricAqua transition-all duration-300">
+                            <li className="text-primary dark:text-white text-base font-normal hover:text-ElectricAqua transition-all duration-300">
                                 <Link href="/contact">Contact</Link>
                             </li>
                         </ul>
@@ -43,41 +43,41 @@ const Footer: FC = () => {
 
                     {/* Get In Touch Section */}
                     <div className="md:col-span-3 col-span-12">
-                        <h4 className="text-primary font-semibold text-lg mb-4">Get In Touch</h4>
+                        <h4 className="text-primary dark:text-white font-semibold text-lg mb-4">Get In Touch</h4>
                         <ul className="space-y-2">
-                            <li className="text-primary text-base font-normal">
-                                <span className="text-primary">Phone:</span> +91-120-4217441
+                            <li className="text-primary dark:text-white text-base font-normal">
+                                <span className="text-primary dark:text-white ">Phone:</span> +91-120-4217441
                             </li>
-                            <li className="text-primary text-base font-normal">
-                                <span className="text-primary">Email:</span> info@temflo.co.in
+                            <li className="text-primary dark:text-white text-base font-normal">
+                                <span className="text-primary dark:text-white">Email:</span> info@temflo.co.in
                             </li>
-                            <li className="text-primary text-base font-normal">
-                                <span className="text-primary">Website:</span> www.temflo.co.in
+                            <li className="text-primary dark:text-white text-base font-normal">
+                                <span className="text-primary dark:text-white">Website:</span> www.temflo.co.in
                             </li>
                         </ul>
                     </div>
 
                     {/* Support & Social Section */}
                     <div className="md:col-span-3 col-span-12">
-                        <h4 className="text-primary font-semibold text-lg mb-4">Support</h4>
+                        <h4 className="text-primary dark:text-white font-semibold text-lg mb-4">Support</h4>
                         <ul className="space-y-3">
-                            <li className="text-primary text-base font-normal hover:text-ElectricAqua transition-all duration-300">
-                                <Link href="/Termsofuse">Terms of Use</Link>
+                            <li className="text-primary dark:text-white text-base font-normal hover:text-ElectricAqua transition-all duration-300">
+                                <Link href="/Termsofuse dark:text-white">Terms of Use</Link>
                             </li>
-                            <li className="text-primary text-base font-normal hover:text-ElectricAqua transition-all duration-300">
-                                <Link href="/Privacystatement">Privacy Statement</Link>
+                            <li className="text-primary dark:text-white text-base font-normal hover:text-ElectricAqua transition-all duration-300">
+                                <Link href="/Privacystatement dark:text-white">Privacy Statement</Link>
                             </li>
-                            <li className="text-primary font-semibold text-lg mt-6 mb-3">Follow Us</li>
+                            <li className="text-primary dark:text-white font-semibold text-lg mt-6 mb-3">Follow Us</li>
                             <li>
                                 <ul className="flex items-center gap-4">
                                     <li>
-                                        <Link href="/" className="group">
+                                        <Link href="/" className="text-primary dark:text-white transition-colors">
                                             <svg
                                                 width="26"
                                                 height="27"
-                                                fill="#883FFC"
+                                                fill="currentColor"
                                                 viewBox="0 0 26 27"
-                                                className="group-hover:fill-white transition-colors"
+                                                className="text-primary dark:text-white group-hover:text-white transition-colors"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <g clipPath="url(#clip0_7_993)">
@@ -97,13 +97,13 @@ const Footer: FC = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/" className="group">
+                                        <Link href="/" className="text-primary dark:text-white transition-colors">
                                             <svg
                                                 width="26"
                                                 height="27"
                                                 viewBox="0 0 26 27"
-                                                fill="#883FFC"
-                                                className="group-hover:fill-white transition-colors"
+                                                fill="currentColor"
+                                                className="text-primary dark:text-white group-hover:text-white transition-colors"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <g clipPath="url(#clip0_7_995)">
@@ -123,13 +123,13 @@ const Footer: FC = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/" className="group">
+                                        <Link href="/" className="dark:text-white">
                                             <svg
                                                 width="26"
                                                 height="28"
                                                 viewBox="0 0 26 28"
-                                                fill="#883FFC"
-                                                className="group-hover:fill-white transition-colors"
+                                                fill="currentColor"
+                                                className=" text-primary dark:text-white group-hover:text-white transition-colors"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <g clipPath="url(#clip0_7_997)">
@@ -153,16 +153,16 @@ const Footer: FC = () => {
                 <div className="grid md:grid-cols-12 gap-8 py-8 md:py-12">
                     {/* Copyright Section */}
                     <div className="md:col-span-6 col-span-12">
-                        <p className="text-base font-normal text-primary mb-2">
+                        <p className="text-base font-normal text-primary mb-2 dark:text-white">
                             © All rights reserved. Made by{" "}
                             <Link
                                 href="/"
-                                className="hover:text-primary transition-colors"
+                                className="hover:text-primary dark:text-white transition-colors"
                             >
                                 info@TSLP
                             </Link>
                         </p>
-                        <p className="text-base font-normal text-primary">
+                        <p className="text-base font-normal text-primary dark:text-white">
                             Distributed by{" "}
                             <Link
                                 href="/"
