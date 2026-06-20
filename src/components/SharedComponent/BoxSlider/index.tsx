@@ -73,7 +73,7 @@ const BoxSlider = () => {
         
          <div className="mt-14 relative">
                                                                <Image
-                                                                    src="/images/hero/Honey well.jpeg"
+                                                                    src="/images/hero/Honey Well.jpeg"
                                                                     alt="Product"
                                                                     width={75}
                                                                     height={55}

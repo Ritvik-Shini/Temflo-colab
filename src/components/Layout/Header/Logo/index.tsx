@@ -20,7 +20,7 @@ const Logo: React.FC = () => {
                 className='dark:block'
             />
             <span style={{ marginLeft: '15px', fontSize: '20px', fontWeight: 'bold', color: '#883FFC' }}>
-            Temflo Systems <br></br>Pvt. Ltd.
+            Temflo Systems <br></br>Private Limited
                </span>
             </div> 
         </Link>

@@ -168,7 +168,7 @@ const Footer: FC = () => {
                                 href="/"
                                 className="hover:text-primary transition-colors"
                             >
-                                Temflo System Pvt. Ltd.
+                                Temflo Systems Pvt. Ltd.
                             </Link>
                         </p>
                     </div>
