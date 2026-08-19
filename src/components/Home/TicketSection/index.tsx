@@ -5,6 +5,7 @@ import Image from "next/image";
 const TicketSection = () => {
     return (
         <>
+        {/* Ticket Section is commentedout
             <section  className="dark:bg darkmode pt-0">
                 <div className="container mx-auto px-4">
                     <div className="bg-primary relative md:mx-auto mx-0 overflow-hidden py-10 rounded-[22px] lg:-mb-48 md:mt-20 mt-10">
@@ -39,7 +40,7 @@ const TicketSection = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>  */}
         </>
     );
 };

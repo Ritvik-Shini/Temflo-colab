@@ -123,7 +123,7 @@ const Header: React.FC = () => {
             </button>
             <Link
               href="/joinus"
-              className="hidden lg:block btn_outline btn-2 hover-outline-slide-down rounded-lg"
+              className=" hidden lg:block inline-flex items-center justify-center gap-1 px-2 py-1 rounded-lg font-medium text-white bg-[#883FFC] hover:bg-purple-700 transition-all duration-300 shadow-md"
             >
               <span className="!py-2 !px-4">Join Us</span>
             </Link>
@@ -146,7 +146,7 @@ const Header: React.FC = () => {
             )}
             <Link
               href="/contact"
-              className="hidden lg:block btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden"
+              className="hidden lg:block inline-flex items-center justify-center gap-1 px-2 py-1 rounded-lg font-medium text-white bg-[#883FFC] hover:bg-purple-700 transition-all duration-300 shadow-md"
          
             >
               <span className="!py-2 !px-4">Contact Us</span>
@@ -223,15 +223,14 @@ const Header: React.FC = () => {
           <div className="mt-4 flex flex-col space-y-4 w-full">
             <Link
               href="/joinus"
-              className="bg-transparent border border-solid border-primary text-primary px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white"
+              className="inline-flex items-center justify-center gap-1 px-2 py-1 rounded-lg font-medium text-white bg-[#883FFC] hover:bg-purple-700 transition-all duration-300 shadow-md"
      
             >
               Join Us
             </Link>
             <Link
               href="/contact"
-              className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700"
-         
+              className="inline-flex items-center justify-center gap-1 px-2 py-1 rounded-lg font-medium text-white bg-[#883FFC] hover:bg-purple-700 transition-all duration-300 shadow-md"
             >
               Contact Us
             </Link>

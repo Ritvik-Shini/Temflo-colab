@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image'; 
 import { getPageUrl } from "@/lib/pageUrls";
 import Link from "next/link";
-const citybeautification = [
+const cityBeautification = [
   { 
     id: 55, 
     title: 'Patna Smart City Ltd.', 
@@ -41,20 +41,20 @@ const citybeautification = [
   },  
 ];
 
-export default function citybeautificationPage() {
+export default function cityBeautificationPage() {
   return (
     <div className="container mx-auto px-4 py-10 md:py-16">
       <div className="text-center mb-12">
         <br></br><br></br><br></br><br></br>
         <p className="text-lg md:text-4xl font-extrabold text-primary-gray-900">
-          City beautification
+          City Beautification
         </p>
         <p className="mt-5 text-xl text-gray-600 max-w-2xl mx-auto">
           Explore our advanced display systems and command-and-control monitoring solutions.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-        {citybeautification.map((solution) => (
+        {cityBeautification.map((solution) => (
           <div key={solution.id} className="bg-white overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
             <div className="relative h-72 md:h-48 w-full">
               <Link href={solution.href}>

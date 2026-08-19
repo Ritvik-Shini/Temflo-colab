@@ -1,125 +1,82 @@
-import Testimonials from "@/components/Home/Testimonials";
-import TicketSection from "@/components/Home/TicketSection";
-import HeroSub from "@/components/SharedComponent/HeroSub";
-import React from "react";
-import { Metadata } from "next";
+"use client";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { speakers } from "@/app/api/data";
+import { divisionCategories } from "@/app/api/data";
 
-export const metadata: Metadata = {
-  title: "Division | Temflo",
-};
 
-const Page = () => {
-  const breadcrumbLinks = [
-    { href: "/", text: "" },
-   
-  ];
 
-  // Logic: IDs 1, 2, 3, 4, 5
-  const firstSet = speakers.filter(s => s.id >= 1 && s.id <= 5);
-  
-  // Logic: IDs 6, 7, 8, 9, 10
-  const secondSet = speakers.filter(s => s.id >= 6 && s.id <= 10);
+export default function DivisionPage() {
+  useEffect(() => {
+    document.title = "Division - Temflo "; 
+  }, []);
+  return (
+    <div className="min-h-screen bg-white dark:bg-[#07090e] text-gray-900 dark:text-white pt-44 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto mb-12 text-left">
+        <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#883FFC]">
+          Division
+        </h1>
+        <p className="mt-2 text-gray-600 dark:text-gray-400 text-sm sm:text-base">
+          Explore our project categories showcasing innovative solutions
+        </p>
+      </div>
+
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {divisionCategories.map((solution: any, idx: number) => (
+          <TechCard key={solution.id || idx} solution={solution} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function TechCard({ solution }: { solution: any }) {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const activeImages = solution.images && solution.images.length > 0 
+    ? solution.images 
+    : ["/images/upcoming/Bear_1.jpeg"];
+
+  useEffect(() => {
+    if (activeImages.length <= 1) return;
+
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % activeImages.length);
+    }, 4000);
+
+    return () => clearInterval(timer);
+  }, [activeImages]);
 
   return (
-    <>
-      <HeroSub
-        title="Division "
-        description="Explore our project categories showcasing innovative solutions, custom developments, and scalable systems."
-        breadcrumbLinks={breadcrumbLinks}
-      />
-      
-      <div className="py-20">
-        {/* FIRST SECTION (IDs 1-5) */}
-        <div className="grid lg:grid-cols-5 sm:grid-cols-2 grid-cols-1 items-stretch gap-8 mx-7">
-          {firstSet.map((speaker, index) => (
-            <div
-              key={`first-${speaker.id}`}
-              data-aos="fade-up"
-              data-aos-delay={`${index * 200}`}
-              className={`col-span-1 group overflow-hidden ${
-                index % 2 === 1 ? "lg:mt-28 mt-0" : ""
-              }`}
-            >
-              <div className="overflow-hidden rounded-lg">
-               <Link href={speaker.href}> 
-                <Image
-                  
-                  src={speaker.src}
-                  alt={speaker.alt}
-                  width={400}
-                  height={500}
-                  className="object-cover w-full h-full transition-all duration-500 group-hover:scale-110"
-                />
-                </Link>
-                
-              </div>
-           
-             
-              <div className="pt-6">
-              <Link href={speaker.href}> 
-                <h6 className="text-[28px] font-bold text-secondary dark:text-white">
-                  {speaker.name}
-                </h6>
-              
-                <span className="text-lg text-SlateBlueText dark:text-opacity-80">
-                  {speaker.designation}
-                </span>
-              </Link>
-              
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="my-20" />
-
-        {/* SECOND SECTION (IDs 6-10) */}
-        <div className="grid lg:grid-cols-5 sm:grid-cols-2 grid-cols-1 items-stretch gap-8 mx-7">
-          {secondSet.map((speaker, index) => (
-            <div
-              key={`second-${speaker.id}`}
-              data-aos="fade-up"
-              data-aos-delay={`${index * 200}`}
-              className={`col-span-1 group overflow-hidden ${
-                index % 2 === 1 ? "lg:mt-28 mt-0" : ""
-              }`}
-            >
-              <div className="overflow-hidden rounded-lg">
-                <Link href={speaker.href}> 
-                <Image
-                  src={speaker.src}
-                  alt={speaker.alt}
-                  width={400}
-                  height={500}
-                  className="object-cover w-full h-full transition-all duration-500 group-hover:scale-110"
-                />
-                </Link>
-              </div>
-              <div className="pt-6">
-               <Link href={speaker.href}> 
-                <h6 className="text-[28px] font-bold text-secondary dark:text-white">
-                  {speaker.name}
-                </h6>
-                <span className="text-lg text-SlateBlueText dark:text-opacity-80">
-                  {speaker.designation}
-                </span>
-               </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <Testimonials />
+    <div className="bg-white dark:bg-[#0e131f] border border-gray-200 dark:border-gray-800 rounded-2xl p-5 flex flex-col justify-between shadow-lg dark:shadow-xl">
       <div>
-        <br></br><br></br><br></br>
-      </div>
-    
-    </>
-  );
-};
+        <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 min-h-[50px] flex items-center">
+          {solution.title}
+        </h2>
 
-export default Page;
+        <div className="relative h-44 w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-black mb-5">
+          <Image
+            src={activeImages[currentImageIndex]}
+            alt={solution.title}
+            fill
+            className="object-cover transition-all duration-700 ease-in-out"
+          />
+        </div>
+
+        <ul className="space-y-2.5 mb-4">
+          {solution.items && solution.items.map((item: any, index: number) => (
+            <li key={index}>
+              <Link 
+                href={item.href || "#"} 
+                className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
+              >
+                <span className="text-purple-600 dark:text-purple-400 font-bold">•</span>
+                <span>{item.name}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}

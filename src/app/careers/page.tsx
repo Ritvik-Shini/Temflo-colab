@@ -1,9 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 
 
 export default function CareersPage() {
+  useEffect(() => {
+    document.title = "Careers - Temflo "; 
+  }, []);
   return (
     <main >
         <br></br><br></br><br></br><br></br>

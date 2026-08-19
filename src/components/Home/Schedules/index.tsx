@@ -4,6 +4,9 @@ import Link from "next/link";
 import { conferences, intermissions } from "../../../app/api/data";
 
 const Schedules = () => {
+  const coffeeBreakImage = intermissions[0]?.image ?? "/images/upcoming/Techno Sys.jpeg";
+  const lunchBreakImage = intermissions[1]?.image ?? "/images/upcoming/Terra CIS.jpeg";
+
   return (
     <>
       <div className="flex items-center flex-wrap  w-full border border-solid border-border dark:border-dark_border md:px-14 px-6 md:mt-14 mt-6 rounded-22">
@@ -51,7 +54,7 @@ const Schedules = () => {
                 <div className="flex justify-end flex-wrap gap-30 lg:min-w-96 min-w-max">
                   <div className="flex justify-end  pr-32">
                     <Image
-                      src={intermissions[0].image}
+                      src={coffeeBreakImage}
                       alt="coffee break"
                       width={0}
                       height={0}
@@ -76,7 +79,7 @@ const Schedules = () => {
                 <div className="flex justify-end flex-wrap gap-30 lg:min-w-96 min-w-max">
                   <div className="flex justify-end pr-32">
                     <Image
-                      src={intermissions[1].image}
+                      src={lunchBreakImage}
                       alt="lunch break"
                       width={0}
                       height={0}

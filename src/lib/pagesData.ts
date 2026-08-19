@@ -396,10 +396,10 @@ export const pagesData: PageEntry[] = [
   },
   {
     id: "13",
-    slug: "Patna Smart City Ltd.",
-    title: "Patna Smart City Ltd.",
-    description: "Patna Smart City Limited is an organization working to transform Patna into a smart, sustainable, and technology-driven city under the Smart Cities Mission..",
-    fullDescription: "Patna Smart City Limited is a Special Purpose Vehicle (SPV) formed to implement the Smart City Mission in Patna, Bihar. Established under the guidelines of the Smart Cities Mission, the company focuses on transforming Patna into a sustainable, citizen-friendly, and technology-driven urban center..",
+    slug: "Facade Lighting at Jhansi fort.",
+    title: "Facade Lighting at Jhansi fort.",
+    description: "  One of the most recognised light and sound shows in India, this spectacular attraction has earned widespread acclaim for its captivating storytelling, state-of-the-art visual effects, and immersive presentation. Over the years, it has received numerous prestigious awards and accolades for excellence in innovation, cultural preservation, and visitor experience, making it a must-visit destination for audiences from across the country and around the world.",
+    fullDescription: "Recognised as one of India's most iconic and award-winning light and sound shows, this spectacular attraction offers a breathtaking blend of storytelling, music, lighting, projection mapping, and special effects. Designed to bring history, culture, and heritage to life, the show creates an immersive experience that captivates audiences of all ages. Its world-class production quality, innovative technology, and powerful narration have earned it numerous national and international awards and widespread recognition. A perfect combination of entertainment and education, it stands as a benchmark for excellence in audiovisual storytelling and remains a must-visit attraction for visitors from across India and around the world..",
     image: "/images/hero/Black_1.png",
     icon: "🏙️",
     category: "Infrastructure",
@@ -419,7 +419,7 @@ export const pagesData: PageEntry[] = [
     ],
     videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     location: {
-      name: "Patna, Bihar",
+      name: "Jhansi fort",
       coordinates: "25.5941° N, 85.1376° E",
       mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
     },
@@ -427,10 +427,10 @@ export const pagesData: PageEntry[] = [
   },
   {
     id: "14",
-    slug: "Portblair Smart City Project",
-    title: "Portblair Smart City Project",
-    description: "Port Blair Smart City Limited is a project focused on transforming Port Blair into a modern, sustainable, and citizen-friendly smart city through advanced infrastructure and digital solutions..",
-    fullDescription: "Port Blair Smart City Limited is responsible for implementing the Smart Cities Mission in Port Blair, aiming to develop a sustainable, resilient, and technology-enabled urban environment. The project focuses on improving core infrastructure such as roads, water supply, sanitation, and waste management, while also introducing smart solutions like digital governance, intelligent traffic systems, and integrated command centers. Emphasis is placed on enhancing the quality of life for residents, promoting tourism, and preserving the ecological balance of the Andaman and Nicobar Islands. Through area-based development and city-wide initiatives, the project seeks to make Port Blair more efficient, inclusive, and future-ready..",
+    slug: "Light and sound show at Bareilly jail",
+    title: "Light and sound show at Bareilly jail",
+    description: "A true example of transformation, this site was once barren land that, through our vision, innovation, and dedicated efforts, has been transformed into one of the region's most popular and vibrant tourist destinations, attracting visitors with its unique experiences and world-class attractions.",
+    fullDescription: "From barren land to a thriving tourist destination, this remarkable transformation stands as a testament to vision, innovation, and perseverance. What was once an undeveloped landscape has been reimagined into a vibrant attraction that welcomes thousands of visitors each year. Every element of the destination has been thoughtfully designed to create memorable experiences while showcasing the perfect blend of creativity, sustainability, and world-class infrastructure. Today, it stands as a symbol of successful destination development and a landmark that continues to inspire and captivate visitors from across the country.",
     image: "/images/hero/Black_1.png",
     icon: "📊",
     category: "Operations",
@@ -449,7 +449,7 @@ export const pagesData: PageEntry[] = [
     ],
     videoLink: "https://www.youtube.com/embed/jNQXAC9IVRw",
     location: {
-      name: "Port Blair, Andaman",
+      name: "Bareilly jail",
       coordinates: "11.7401° N, 92.7673° E",
       mapsUrl: "https://maps.google.com/?q=Port+Blair,Andaman"
     },
@@ -457,8 +457,8 @@ export const pagesData: PageEntry[] = [
   },
   {
     id: "15",
-    slug: "Project ICT for RRVPNL",
-    title: "Project ICT for RRVPNL",
+    slug: "Water screen based light and sound show at Suryakund Ayodhya",
+    title: "Water screen based light and sound show at Suryakund Ayodhya",
     description: "Rajasthan Rajya Vidyut Prasaran Nigam Limited ICT project focuses on modernizing power transmission operations through digital systems, real-time monitoring, and efficient data management..",
     fullDescription: "Advanced energy management system for optimizing power distribution, renewable integration, and consumption patterns.",
     image: "/images/hero/Black_1.png",
@@ -480,7 +480,7 @@ export const pagesData: PageEntry[] = [
     ],
     videoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     location: {
-      name: "Patna, Bihar",
+      name: "Suryakund Ayodhya, Uttar Pradesh",
       coordinates: "25.5941° N, 85.1376° E",
       mapsUrl: "https://maps.google.com/?q=Patna,Bihar"
     },

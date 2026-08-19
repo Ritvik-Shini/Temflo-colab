@@ -3,8 +3,7 @@ import Link from "next/link";
 
 const Hero = () => {
     return (
-        <section className="dark:bg-darkmode">
-            <br></br><br></br>
+        <section className="dark:bg-darkmode pt-28 md:pt-36">
             <div className="container">
                 <div className="grid lg:grid-cols-12 grid-cols-1 items-center gap-30">
                     <div className="col-span-6">
@@ -34,32 +33,31 @@ const Hero = () => {
                             Choosing us means partnering with a company that combines extensive experience with a commitment to pushing the boundaries of what is possible,
                             delivering exceptional value, and creating impactful experiences.
                         </p>
-                        <div className="flex items-center md:justify-normal lg:justify-center justify-start flex-wrap gap-4">
-                            <Link
-                                href="/schedules"
-                                data-aos="fade-up"
-                                data-aos-delay="500"
-                                data-aos-duration="1000"
-                                className="btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden"
-                            >
-                                <span className="!flex !items-center gap-14">
-                                    <i className="bg-[url('/images/hero/tickets.svg')] bg-no-repeat bg-contain w-6 h-6 inline-block"></i>
-                                    Services
-                                </span>
-                            </Link>
-                            <Link
-                                href="/blog"
-                                data-aos="fade-up"
-                                data-aos-delay="600"
-                                data-aos-duration="1000"
-                                className="btn_outline btn-2 hover-outline-slide-down group"
-                            >
-                                <span className="!flex !items-center gap-14">
-                                    <i className="bg-[url('/images/hero/calander.svg')] bg-no-repeat bg-contain w-6 h-6 inline-block group-hover:bg-[url('/images/hero/calander-hover-white.svg')]"></i>
-                                    Projects
-                                </span>
-                            </Link>
-                        </div>
+                        <div className="flex items-center md:justify-normal lg:justify-center justify-start gap-4">
+                         {/* Services Button */}
+                           <Link
+                            href="/schedules"
+                            data-aos="fade-up"
+                            data-aos-delay="500"
+                            data-aos-duration="1000"
+                            className="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-lg font-medium text-white bg-[#883FFC] hover:bg-purple-700 transition-all duration-300 shadow-md"
+                       >
+                         <i className="w-5 h-5 bg-[url('/images/hero/tickets.svg')] bg-no-repeat bg-center inline-block brightness-0 invert" />
+                         <span>Services</span>
+                           </Link>
+
+                         {/* Projects Button */}
+                           <Link
+                            href="/blog"
+                           data-aos="fade-up"
+                           data-aos-delay="600"
+                           data-aos-duration="1000"
+                           className="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-lg font-medium text-white bg-[#883FFC] hover:bg-purple-700 transition-all duration-300 shadow-md"
+                        >
+                            <i className="w-5 h-5 bg-[url('/images/hero/calander.svg')] bg-no-repeat bg-center inline-block brightness-0 invert" />
+                           <span>Projects</span>
+                         </Link>
+                       </div>
                     </div>
                     <div
                         data-aos="fade-left"

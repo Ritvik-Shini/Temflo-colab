@@ -7,7 +7,7 @@ import Link from "next/link";
    const digitalmuseum = [ 
     {
     id: 7, 
-    title: 'Patna Smart City Ltd.', 
+    title: 'Major Dhayanchand Museum, Jhansi.', 
     src: '/images/hero/mug_1.png',
     href:'/solutions/7'
 
@@ -50,7 +50,7 @@ export default function DigitalmuseumPage() {
       <div className="text-center mb-12">
         <br></br><br></br><br></br><br></br>
         <p className="text-lg md:text-4xl font-extrabold text-primary-gray-900">
-          Digital Museum
+          Digital Museum & Experience Center
         </p>
         <p className="mt-5 text-xl text-gray-600 max-w-2xl mx-auto">
           Explore our advanced display systems and command-and-control monitoring solutions.

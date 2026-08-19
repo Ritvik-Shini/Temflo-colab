@@ -49,7 +49,7 @@ export default function PlcscadadcsbasedautomationPage() {
       <div className="text-center mb-12">
         <br></br><br></br><br></br><br></br>
         <p className="text-lg md:text-4xl font-extrabold text-primary-gray-900">
-          Plc SCADA DCS Based Automation
+          PLC/SCADA/DCS Based Automation
         </p>
         <p className="mt-5 text-xl text-gray-600 max-w-2xl mx-auto">
           Explore our advanced display systems and command-and-control monitoring solutions.

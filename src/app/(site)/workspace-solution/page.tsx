@@ -16,7 +16,7 @@ const workspacesolution = [
     href:'/solutions/32'
   },
   { 
-    id: 3, 
+    id: 33, 
     title: 'Project ICT for RRVPNL', 
     src: '/images/hero/mug_3.png', 
     href:'/solutions/33'
@@ -41,7 +41,7 @@ const workspacesolution = [
   },  
 ];
 
-export default function WorkspacesolutionPage() {
+export default function workspacesolutionPage() {
   return (
     <div className="container mx-auto px-4 py-10 md:py-16">
       <div className="text-center mb-12">

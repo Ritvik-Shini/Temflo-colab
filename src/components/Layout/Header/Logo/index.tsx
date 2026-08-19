@@ -19,9 +19,11 @@ const Logo: React.FC = () => {
                 quality={100}
                 className='dark:block'
             />
-            <span style={{ marginLeft: '15px', fontSize: '20px', fontWeight: 'bold', color: '#883FFC' }}>
-            Temflo Systems <br></br>Private Limited
-               </span>
+          <span 
+          className="ml-[15px] font-bold text-[20px] text-[#883FFC] max-sm:text-[11px] max-sm:leading-tight inline-block"
+           >
+           Temflo Systems <br />Private Limited
+           </span>
             </div> 
         </Link>
     );
