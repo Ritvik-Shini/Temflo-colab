@@ -83,10 +83,10 @@ export default function BlogPage() {
                   <button
                     key={idx}
                     onClick={() => setCurrentIndex(idx)}
-                    className={`w-full text-left p-3.5 rounded-2xl transition-all duration-300 flex items-center justify-between gap-3 border flex-shrink-0 ${
-                      isActive
-                        ? "bg-purple-50 dark:bg-purple-950/40 border-[#883FFC] text-[#883FFC] shadow-md scale-[1.01]"
-                        : "bg-white dark:bg-neutral-900/60 border-slate-100 dark:border-neutral-800/80 text-slate-700 dark:text-neutral-300 hover:border-purple-300 dark:hover:border-neutral-700"
+                    className={`w-full text-left p-3.5 rounded-2xl border transition-all duration-300 flex items-center justify-between gap-3 ${
+                    isActive
+                    ? "bg-purple-50 dark:bg-purple-950/40 border-[#883FFC] text-[#883FFC] shadow-md"
+                    : "bg-white dark:bg-neutral-900/60 border-slate-100 dark:border-neutral-800/80 text-slate-700 dark:text-neutral-300 hover:border-purple-300 dark:hover:border-neutral-700"
                     }`}
                   >
                     <div className="flex items-center gap-3.5 min-w-0">
@@ -103,27 +103,7 @@ export default function BlogPage() {
                       </span>
                     </div>
 
-                    <div
-                      className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 transition-colors ${
-                        isActive
-                          ? "bg-[#883FFC] text-white"
-                          : "bg-slate-100 dark:bg-neutral-800 text-slate-400 dark:text-neutral-500"
-                      }`}
-                    >
-                      <svg
-                        className="w-3.5 h-3.5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        />
-                      </svg>
-                    </div>
+                    
                   </button>
                 );
               })}
@@ -198,7 +178,6 @@ export default function BlogPage() {
                     className="inline-flex items-center justify-center gap-2 bg-[#883FFC] text-white px-6 py-3 rounded-lg font-medium hover:bg-purple-700 transition-all shadow-md"
             >
           <span>View Details</span>
-          <span>→</span>
        </Link>
 
         {/* Open Gallery Button */}

@@ -34,7 +34,7 @@ const Conferences = () => {
             </p>
             <Link
               href="/blog"
-              className="btn_outline btn-2 hover-outline-slide-down"
+              className="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-lg font-medium text-white bg-[#883FFC] hover:bg-purple-700 transition-all duration-300 shadow-md"
             >
               <span>Explore</span>
             </Link>

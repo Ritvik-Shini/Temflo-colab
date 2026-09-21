@@ -237,7 +237,7 @@ export const PackageStructure = () => {
                                                                                                 icon="tabler:folder"
                                                                                                 className="text-primary text-base inline-block me-2"
                                                                                             />
-                                                                                            schedules
+                                                                                           whyus
                                                                                         </span>
                                                                                     </div>
 

@@ -1,0 +1,137 @@
+export const categories = [
+  { id: 1, name: 'Infrastructure', slug: 'infrastructure' },
+  { id: 2, name: 'Operations', slug: 'operations' },
+  { id: 3, name: 'Utilities', slug: 'utilities' },
+  { id: 4, name: 'Security', slug: 'security' },
+];
+
+export const pages = [
+  {
+    id: 1,
+    slug: 'patna-smart-city-ltd',
+    title: 'Patna Smart City Ltd.',
+    description: 'Patna Smart City Limited is an organization working to transform Patna into a smart, sustainable, and technology-driven city.',
+    fullDescription: 'Patna Smart City Limited focuses on technology-driven urban transformation with data, services, and connected infrastructure.',
+    image: '/images/hero/Black_1.png',
+    category: 'Infrastructure',
+    features: ['Real-time traffic monitoring', 'Integrated utilities management', 'Citizen engagement platform'],
+    galleryImages: ['/images/hero/Black_1.png', '/images/ThumbnailSlider/water_1.png', '/images/ThumbnailSlider/water_2.jpg'],
+    videoLink: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    location: { name: 'Patna, Bihar', coordinates: '25.5941° N, 85.1376° E', mapsUrl: 'https://maps.google.com/?q=Patna,Bihar' },
+    createdAt: '2024-01-15',
+  },
+  {
+    id: 2,
+    slug: 'portblair-smart-city-project',
+    title: 'Portblair Smart City Project',
+    description: 'Port Blair Smart City Limited is focused on sustainable urban development and citizen-friendly digital infrastructure.',
+    fullDescription: 'The project brings digital governance, intelligent traffic systems, and improved public service delivery to Port Blair.',
+    image: '/images/hero/Black_1.png',
+    category: 'Operations',
+    features: ['Multi-agency coordination', 'Real-time alerting system', 'Video wall integration'],
+    galleryImages: ['/images/hero/Black_1.png', '/images/ThumbnailSlider/water_1.png', '/images/ThumbnailSlider/water_3.jpg'],
+    videoLink: 'https://www.youtube.com/embed/jNQXAC9IVRw',
+    location: { name: 'Port Blair, Andaman', coordinates: '11.7401° N, 92.7673° E', mapsUrl: 'https://maps.google.com/?q=Port+Blair,Andaman' },
+    createdAt: '2024-01-20',
+  },
+  {
+    id: 3,
+    slug: 'project-ict-for-rrvpnl',
+    title: 'Project ICT for RRVPNL',
+    description: 'A modern power transmission ICT project focused on real-time monitoring, data management, and efficient grid operations.',
+    fullDescription: 'The solution supports operational oversight, renewable integration, and improved visibility across transmission networks.',
+    image: '/images/hero/Black_1.png',
+    category: 'Utilities',
+    features: ['Load balancing', 'Renewable integration', 'Consumption forecasting'],
+    galleryImages: ['/images/hero/Black_1.png', '/images/ThumbnailSlider/water_2.jpg', '/images/ThumbnailSlider/water_4.png'],
+    videoLink: 'https://www.youtube.com/embed/9bZkp7q19f0',
+    location: { name: 'Jaipur, Rajasthan', coordinates: '26.9124° N, 75.7873° E', mapsUrl: 'https://maps.google.com/?q=Jaipur,Rajasthan' },
+    createdAt: '2024-01-25',
+  },
+  {
+    id: 4,
+    slug: 'bhopal-smart-city-ltd',
+    title: 'Bhopal Smart City Ltd',
+    description: 'Bhopal Smart City Development Corporation Limited is responsible for transforming Bhopal into a smart, sustainable city.',
+    fullDescription: 'The effort includes improved services, digital decision support, and connected public infrastructure for better city management.',
+    image: '/images/hero/Black_1.png',
+    category: 'Security',
+    features: ['AI video analytics', 'Facial recognition', 'Incident detection'],
+    galleryImages: ['/images/hero/Black_1.png', '/images/ThumbnailSlider/water_1.png', '/images/ThumbnailSlider/water_3.jpg'],
+    videoLink: 'https://www.youtube.com/embed/2Xc9gXyqjpE',
+    location: { name: 'Bhopal, Madhya Pradesh', coordinates: '23.1815° N, 79.9864° E', mapsUrl: 'https://maps.google.com/?q=Bhopal,MadhyaPradesh' },
+    createdAt: '2024-02-01',
+  },
+  {
+    id: 5,
+    slug: 'nagpur-metro-rail-corporation-ltd',
+    title: 'Nagpur Metro Rail Corporation Ltd',
+    description: 'Maharashtra Metro Rail Corporation Limited is responsible for developing and operating the Nagpur Metro to provide safe, efficient, and sustainable urban transportation.',
+    fullDescription: 'Smart transport infrastructure, command center visibility, and commuter-focused digital operations for urban transit.',
+    image: '/images/hero/Black_1.png',
+    category: 'Security',
+    features: ['Transit monitoring', 'Operations dashboard', 'Incident response'],
+    galleryImages: ['/images/hero/Black_1.png', '/images/ThumbnailSlider/water_2.jpg', '/images/ThumbnailSlider/water_4.png'],
+    videoLink: 'https://www.youtube.com/embed/kffacxfA7g4',
+    location: { name: 'Nagpur, Maharashtra', coordinates: '21.1458° N, 79.0882° E', mapsUrl: 'https://maps.google.com/?q=Nagpur,Maharashtra' },
+    createdAt: '2024-02-01',
+  },
+  {
+    id: 6,
+    slug: 'delhi-jal-board',
+    title: 'Delhi Jal Board',
+    description: 'Delhi Jal Board is responsible for managing water supply and sewage services in Delhi, ensuring safe and reliable water for residents.',
+    fullDescription: 'Digital water network monitoring, service uptime tracking, and public utility system optimization.',
+    image: '/images/hero/Black_1.png',
+    category: 'Security',
+    features: ['Utility asset monitoring', 'Service reliability', 'Digital operations'],
+    galleryImages: ['/images/hero/Black_1.png', '/images/ThumbnailSlider/water_1.png', '/images/ThumbnailSlider/water_2.jpg'],
+    videoLink: 'https://www.youtube.com/embed/aqz-KE-bpKQ',
+    location: { name: 'Delhi', coordinates: '28.6139° N, 77.2090° E', mapsUrl: 'https://maps.google.com/?q=Delhi' },
+    createdAt: '2024-02-01',
+  },
+];
+
+export const speakers = [
+  {
+    id: 1,
+    name: 'Digital Museum & Experience Center',
+    designation: 'Transform museums into immersive digital experiences.',
+  },
+  {
+    id: 2,
+    name: 'Display & Monitoring Solution',
+    designation: 'Video walls, control rooms, and live monitoring systems.',
+  },
+  {
+    id: 3,
+    name: 'Light & Sound Show',
+    designation: 'Immersive storytelling experiences for public spaces.',
+  },
+];
+
+export const conferences = [
+  { id: 1, title: 'Temflo Systems provides Delhi Metro with integrated control room solutions.' },
+  { id: 2, title: 'Local Business Global Event' },
+  { id: 3, title: 'Frontiers Conference Perspectives' },
+];
+
+export const galleryImages = [
+  { id: 1, pageId: 1, imageUrl: '/images/hero/Black_1.png', sortOrder: 1 },
+  { id: 2, pageId: 1, imageUrl: '/images/ThumbnailSlider/water_1.png', sortOrder: 2 },
+  { id: 3, pageId: 1, imageUrl: '/images/ThumbnailSlider/water_2.jpg', sortOrder: 3 },
+  { id: 4, pageId: 2, imageUrl: '/images/hero/Black_1.png', sortOrder: 1 },
+  { id: 5, pageId: 2, imageUrl: '/images/ThumbnailSlider/water_3.jpg', sortOrder: 2 },
+  { id: 6, pageId: 3, imageUrl: '/images/ThumbnailSlider/water_4.png', sortOrder: 1 },
+  { id: 7, pageId: 4, imageUrl: '/images/hero/Black_1.png', sortOrder: 1 },
+  { id: 8, pageId: 5, imageUrl: '/images/ThumbnailSlider/water_2.jpg', sortOrder: 1 },
+  { id: 9, pageId: 6, imageUrl: '/images/ThumbnailSlider/water_1.png', sortOrder: 1 },
+];
+
+export const media = [
+  { id: 1, file_name: 'Black_1.png', original_name: 'Black_1.png', mime_type: 'image/png', size: 198000, url: '/images/hero/Black_1.png', created_at: '2024-01-15T00:00:00.000Z' },
+  { id: 2, file_name: 'water_1.png', original_name: 'water_1.png', mime_type: 'image/png', size: 214000, url: '/images/ThumbnailSlider/water_1.png', created_at: '2024-01-16T00:00:00.000Z' },
+  { id: 3, file_name: 'water_2.jpg', original_name: 'water_2.jpg', mime_type: 'image/jpeg', size: 249000, url: '/images/ThumbnailSlider/water_2.jpg', created_at: '2024-01-17T00:00:00.000Z' },
+  { id: 4, file_name: 'water_3.jpg', original_name: 'water_3.jpg', mime_type: 'image/jpeg', size: 268000, url: '/images/ThumbnailSlider/water_3.jpg', created_at: '2024-01-18T00:00:00.000Z' },
+  { id: 5, file_name: 'water_4.png', original_name: 'water_4.png', mime_type: 'image/png', size: 232000, url: '/images/ThumbnailSlider/water_4.png', created_at: '2024-01-19T00:00:00.000Z' },
+];

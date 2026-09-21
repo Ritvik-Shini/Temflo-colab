@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { conferences, intermissions } from "../../../app/api/data";
 
-const Schedules = () => {
+const WhyUs = () => {
   const coffeeBreakImage = intermissions[0]?.image ?? "/images/upcoming/Techno Sys.jpeg";
   const lunchBreakImage = intermissions[1]?.image ?? "/images/upcoming/Terra CIS.jpeg";
 
@@ -101,4 +101,4 @@ const Schedules = () => {
   );
 };
 
-export default Schedules;
+export default WhyUs;
